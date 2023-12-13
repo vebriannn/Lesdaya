@@ -1,0 +1,373 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* varible color */
+:root {
+    --color-white: #FFFFFF;
+    --color-silver: #DFE1F5;
+    --color-black: #000000;
+    --color-lightblue: #5B5FF1;
+    --color-silver-desk: #A7A7A7;
+}
+
+/* atur ke semua selector */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* header */
+header {
+    transition: 0.3s ease-in-out;
+}
+
+header .navbar .container a {
+    color: var(--color-white);
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+}
+
+header .navbar .container a:hover {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link a {
+    font-weight: 500;
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+    border: 2px solid var(--color-white);
+    border-radius: 40px;
+    padding: 0 20px;
+    transition: 0.3s ease-in-out;
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup:hover{
+    border: 2px solid var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup a:hover {
+    color: var(--color-black);
+}
+
+
+/* hero section */
+#hero-section {
+    background-image: url(../images/beranda/BgHeroSection.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-section .container .subtitle {
+    font-weight: 500;
+    color: var(--color-white);
+    font-size: 26px;
+}
+
+#hero-section .container .title {
+    font-weight: 600;
+    font-size: 126px;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+}
+
+
+/* section tentang */
+#tentang-section {
+    background-color:rgba(223, 225, 245, 1);
+    height: 90vh;
+}
+
+.card-tentang {
+    position: relative;
+    border: 0 !important;
+    border-radius: 6px;
+    background-color: #F5F5F5 !important;
+}
+
+
+#tentang-section .container .card-group .row .col-3:nth-child(1) .card {
+    margin-top: 2rem;
+}
+
+#tentang-section .container .card-group .row .col-3:nth-child(2) .card {
+    margin-top: 6rem;
+}
+
+#tentang-section .container .card-group .row .col-3:nth-child(3) .card {
+    margin-top: -2rem;
+}
+
+#tentang-section .container .card-group .row .col-3:nth-child(4) .card {
+    margin-top: 8rem;
+    
+}
+
+
+.card-tentang::before {
+    content: "";
+    width: 100%;
+    top: 328px;
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(232, 233, 245, 1), rgba(232, 233, 245, 0));
+    border-radius: 6px;
+}
+
+#tentang-section .container .card-group .row .col-3:nth-child(1) .card-tentang::before {
+    height: 70%;
+}
+
+#tentang-section .container .card-group .row .col-3:nth-child(2) .card-tentang::before {
+    height: 40%;
+}
+
+#tentang-section .container .card-group .row .col-3:nth-child(3) .card-tentang::before {
+    height: 90%;
+}
+
+#tentang-section .container .card-group .row .col-3:nth-child(4) .card-tentang::before {
+    height: 30%;
+}
+
+
+/* section budaya */
+
+#budaya {
+    height: max-content;
+    padding: 60px 0;
+}
+
+#budaya .container-fluid .title-budaya .title span {
+    color: var(--color-lightblue);
+}
+
+
+#budaya .container-fluid .images img:first-child {
+    position: absolute;
+    left: 390px;
+    margin-top: -76px;
+}
+
+#budaya .container-fluid .images img:last-child {
+    position: absolute;
+    left: 464px;
+    margin-top: -46px;
+}
+
+#budaya .container-fluid .title-budaya .subtitle {
+    text-align: right;
+    width: 40%;
+}
+
+#budaya .container-fluid .card-group .card {
+    border: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#budaya .container-fluid .card-group .card:hover {
+    transform: translateY(-20px);
+}
+
+#budaya .container-fluid .card-group .card .card-body img {
+    width: 320px;
+    height: 280px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 34px 60px rgba(187, 177, 177, 60%);
+    position: relative;
+    z-index: 1;
+}
+
+#budaya .container-fluid .card-group .card .card-body .deskripsi p {
+    width: 90%;
+}
+
+
+/* section btn selengkapnya */
+
+#btn-selengkapnya .btn-primary {
+    background-color: var(--color-lightblue) !important;
+    border-radius: 50px !important;
+    position: absolute;
+    margin-top: -30px;
+    border: 2px solid var(--color-lightblue) !important;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 20px rgba(91, 95, 241, 55%);
+}
+
+#btn-selengkapnya .btn-primary:hover {
+    transform: scale(0.9);
+}
+
+
+/* section slider images */
+
+#slider-images {
+    height: max-content;
+    background-color: var(--color-silver);
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+#slider-images .container-fluid .title-slider span {
+    color: var(--color-lightblue);
+}
+
+
+#slider-images .container-fluid .slider-group .owl-carousel .owl-images {
+    width: 300px !important;
+    height: 370px;
+    overflow: hidden;
+}
+
+#slider-images .container-fluid .slider-group .shape-atas {
+    width: 100%;
+    height: 10%;
+    background-color: var(--color-silver);
+    position: absolute;
+    margin-top: -50px;
+    z-index: 10;
+    padding-top: 100px;
+    border-radius: 60%;
+    transform: rotate(180deg);
+}
+
+#slider-images .container-fluid .slider-group .shape-bawah {
+    width: 100%;
+    height: 10%;
+    background-color: var(--color-silver);
+    position: absolute;
+    margin-top: -50px;
+    z-index: 10;
+    padding-bottom: 100px;
+    border-radius: 60%;
+}
+
+
+/* section message */
+
+#messages {
+    height: max-content;
+    background-color: var(--color-silver);
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+#messages .container .card {
+    background-color: var(--color-silver) !important;
+    border: 2px solid var(--color-black);
+    border-radius: 40px !important;
+    box-shadow: -4px 6px 0 var(--color-black);
+    overflow: hidden;
+}
+
+#messages .container .card .card-header, 
+#messages .container .card .card-body, 
+#messages .container .card .card-footer {
+    background-color: var(--color-silver) !important;
+}
+
+#messages .container .card .card-header .images img:first-child {
+    position: absolute;
+    left: 234px;
+    margin-top: 14px;
+}
+
+#messages .container .card .card-header .images img:last-child {
+    position: absolute;
+    right: 96px;
+    margin-top: -32px;
+}
+
+#messages .container .card .card-header p {
+    color: var(--color-lightblue);
+}
+
+#messages .container .card .card-body h1 span {
+    color: var(--color-lightblue);
+}
+
+#messages .container .card .card-body .images img:last-child {
+    position: absolute;
+    right: 214px;
+    margin-top: -20px;
+}
+
+#messages .container .card .card-footer hr,
+#messages .container .card .card-body .images,
+#messages .container .card .card-footer .text
+{
+    margin: 0 auto;
+}
+
+#messages .container .card .card-footer .text p
+{
+    color: var(--color-silver-desk);
+}
+
+
+/* footer */ 
+
+footer {
+    padding-top: 6rem;
+    height: max-content;
+    padding-top: 80px;
+    background-color: rgba(54, 54, 54, 1);
+}
+
+footer .container .text-group .link p {
+    color: rgba(180, 185, 201, 1);
+}
+
+footer .container .text-group .social-media .row .col-md-1 img{
+    width: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .container .text-group .social-media .row .col-md-1 img:hover{
+    transform: translateY(-10px);
+}
+
+footer .container .copyright{
+    border-top: 2px solid rgba(225, 228, 237, 1);
+    margin-top: 80px;
+}
+
+footer .container .copyright p {
+    color: rgba(180, 185, 201, 1);
+}
+
+footer .container .copyright p .garis {
+    color: rgba(255, 255, 255, 1);
+}
+
+footer .container .copyright p .link-underline {
+    color: rgba(109, 117, 143, 1);
+    text-decoration: underline;
+    
+    text-decoration-color: rgba(109, 117, 143, 1) !important;
+}
+
+
+/* modifikasi style boostrap */
+
+.navbar-nav .nav-link.active {
+    color: var(--color-white) !important;
+    font-weight: 600 !important;
+}
+
+.scrol-actived {
+    backdrop-filter: blur(10px); /* Sesuaikan nilai blur sesuai kebutuhan */
+    background-color: rgba(255, 255, 255, 0.5); /* Sesuaikan warna dan opasitas sesuai kebutuhan */
+}
