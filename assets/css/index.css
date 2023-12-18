@@ -19,6 +19,18 @@
 }
 
 
+/* hilangkan scrolbar */
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
 /* header */
 header {
     transition: 0.3s ease-in-out;
@@ -49,10 +61,9 @@ header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
 header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup:hover{
     border: 2px solid var(--color-white);
     background-color: var(--color-white);
-    color: var(--color-black);
 }
 
-header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup a:hover {
+header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup:hover a {
     color: var(--color-black);
 }
 
@@ -174,10 +185,44 @@ header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup a:h
 #budaya .container-fluid .card-group .card {
     border: 0;
     transition: 0.3s ease-in-out;
+    width: 345px;
 }
 
 #budaya .container-fluid .card-group .card:hover {
     transform: translateY(-20px);
+}
+
+#budaya .container-fluid .card-group .card .card-body .images-style img {
+    width: 40px;
+    height: auto;
+    border-radius: 60px;
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 100px;
+    z-index: 2;
+} 
+
+#budaya .container-fluid .card-group .card .card-body .images-style .tag .tag-budaya {
+    padding: 6px 14px;
+    color: var(--color-white);
+    font-size: 12px;
+    background-color: var(--color-lightblue);
+    border-radius: 40px;
+    position: absolute;
+    left: 28px;
+    z-index: 2;
+}
+
+#budaya .container-fluid .card-group .col-4:nth-child(1) .card .card-body .images-style .tag .tag-budaya {
+    bottom: 186px;
+}
+
+#budaya .container-fluid .card-group .col-4:nth-child(2) .card .card-body .images-style .tag .tag-budaya {
+    bottom: 158px;
+}
+
+#budaya .container-fluid .card-group .col-4:nth-child(3) .card .card-body .images-style .tag .tag-budaya {
+    bottom: 206px;
 }
 
 #budaya .container-fluid .card-group .card .card-body img {
@@ -189,10 +234,6 @@ header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup a:h
     z-index: 1;
 }
 
-#budaya .container-fluid .card-group .card .card-body .deskripsi p {
-    width: 90%;
-}
-
 
 /* section btn selengkapnya */
 
@@ -200,7 +241,7 @@ header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup a:h
     background-color: var(--color-lightblue) !important;
     border-radius: 50px !important;
     position: absolute;
-    margin-top: -30px;
+    margin-top: -24px;
     border: 2px solid var(--color-lightblue) !important;
     transition: 0.3s ease-in-out;
     box-shadow: 0px 4px 20px rgba(91, 95, 241, 55%);
@@ -217,7 +258,8 @@ header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup a:h
     height: max-content;
     background-color: var(--color-silver);
     overflow: hidden;
-    padding: 100px 0;
+    padding-top: 200px ;
+    padding-bottom: 60px ;
 }
 
 #slider-images .container-fluid .title-slider span {
@@ -255,20 +297,20 @@ header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup a:h
 }
 
 
+
 /* section message */
 
 #messages {
     height: max-content;
     background-color: var(--color-silver);
-    padding-top: 50px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 0px;
 }
 
 #messages .container .card {
     background-color: var(--color-silver) !important;
-    border: 2px solid var(--color-black);
+    border: none;
     border-radius: 40px !important;
-    box-shadow: -4px 6px 0 var(--color-black);
     overflow: hidden;
 }
 
@@ -315,6 +357,64 @@ header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup a:h
 {
     color: var(--color-silver-desk);
 }
+
+
+/* section event */
+
+#event-section {
+    background-color: var(--color-silver);
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
+
+#event-section .container .card {
+    border: 0;
+    background-color: rgba(54, 54, 54, 1);
+    padding: 60px 50px;
+}
+
+#event-section .container .card .text .btn-group button {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#event-section .container .card .text .btn-group button:first-child {
+    color: rgba(109, 117, 143, 1);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-white);
+    transition: 0.3s ease-in-out;
+}
+
+#event-section .container .card .text .btn-group button:first-child:hover {
+    color: var(--color-white);
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+}
+
+#event-section .container .card .text .btn-group button:last-child {
+    color: var(--color-white);
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    transition: 0.3s ease-in-out;
+}
+
+#event-section .container .card .text .btn-group button:last-child:hover {
+    color: rgba(109, 117, 143, 1);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-white);
+}
+
+#event-section .container .card .imges {
+    position: absolute;
+    right: 50px;
+}
+
 
 
 /* footer */ 
