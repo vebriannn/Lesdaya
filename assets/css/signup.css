@@ -1,0 +1,88 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* varible color */
+:root {
+    --color-white: #FFFEFC;
+    --color-silver: #B5B5B5;
+    --color-black: #000000;
+    --color-lightblue: #5B5FF1;
+}
+
+/* atur ke semua selector */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* hilangkan scrolbar */
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* section signin */
+
+#content-signup {
+    height: 100vh;
+    background-color: var(--color-white);
+}
+
+#content-signup .text a {
+    text-decoration: none;
+}
+
+#content-signup .form-signup .form-control-auth {
+    width: 70%;
+}
+
+#content-signup .form-signup .form-control-auth .form .em,
+#content-signup .form-signup .form-control-auth .form .usr,
+#content-signup .form-signup .form-control-auth .form .pw
+{
+    border-bottom: 3px solid black;
+    transition: 0.3 ease-in-out;
+}
+
+#content-signup .form-signup .form-control-auth .form .em:hover,
+#content-signup .form-signup .form-control-auth .form .usr:hover,
+#content-signup .form-signup .form-control-auth .form .pw:hover
+{
+    border-bottom: 3px solid var(--color-lightblue);
+}
+
+#content-signup .form-signup .form-control-auth .form .em span,
+#content-signup .form-signup .form-control-auth .form .em input,
+#content-signup .form-signup .form-control-auth .form .usr span,
+#content-signup .form-signup .form-control-auth .form .usr input,
+#content-signup .form-signup .form-control-auth .form .pw span,
+#content-signup .form-signup .form-control-auth .form .pw input,
+#content-signup .form-signup .form-control-auth .form .pw button, 
+#content-signup .form-signup .form-control-auth .form .pw button span 
+#content-signup .form-signup .form-control-auth .form .pwconfrm span,
+#content-signup .form-signup .form-control-auth .form .pwconfrm input,
+#content-signup .form-signup .form-control-auth .form .pwconfrm button, 
+#content-signup .form-signup .form-control-auth .form .pwconfrm button span 
+{
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#content-signup .form-signup .form-control-auth .form .btn-signup button {
+    background-color: var(--color-lightblue);
+    width: 100%;
+    color: var(--color-white);
+    border-radius: 50px;
+    padding: 10px 0;
+}
+

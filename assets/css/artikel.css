@@ -140,6 +140,7 @@ header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup:hov
 
 #artikel-update .container .card .card-body .deskripsi p {
     color: var(--color-p-desk);
+    margin: 0;
 }
 
 #artikel-update .container .card .card-body .deskripsi p span {
@@ -275,4 +276,666 @@ footer .container .copyright p .link-underline {
 .scrol-actived {
     backdrop-filter: blur(10px); /* Sesuaikan nilai blur sesuai kebutuhan */
     background-color: rgba(255, 255, 255, 0.5); /* Sesuaikan warna dan opasitas sesuai kebutuhan */
+}
+
+
+/* media query */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* navbar */
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    #artikel-update .container .title-ap {
+        font-size: 18px;
+    }
+
+    #artikel-update .container .card .card-body .deskripsi a {
+        font-size: 16px !important;
+    }
+
+    #artikel-update .container .card .card-body .date p, a {
+        font-size: 12px !important;
+    }
+
+    #artikel-update .container .card .card-body .deskripsi p {
+        font-size: 12px !important;
+    }
+
+    #artikel-update .container .card .card-body .date p {
+        font-size: 12px !important;
+    }
+
+    #artikel-latest .container .navbar-artikel h1 {
+        font-size: 18px !important;
+    }
+
+    #artikel-latest .container .navbar-artikel .nav-tabs .nav-item .nav-link {
+        font-size: 12px !important;
+    }
+
+    #artikel-latest .container .content-artikel .content .card .card-body .deskripsi .deskripsi-images a {
+        font-size: 16px !important;
+    }
+
+    #artikel-latest .container .content-artikel .content .card .card-body .deskripsi .deskripsi-images p {
+        font-size: 12px !important;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px) { 
+
+        /* navbar */
+
+        header .navbar .container .collapse .navbar-nav:last-child {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        header .navbar .container .collapse .navbar-nav:last-child,
+        header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+            width: max-content
+        }
+
+
+    /* section artikel update */
+
+    #artikel-update .container-fluid .title-ap {
+        padding-left: 20px !important;
+        padding-top: 6rem;
+        font-size: 20px !important;
+    }
+
+    #artikel-update .container-fluid .row {
+        padding-left: 20px;
+    }
+
+    #artikel-update .container-fluid .card {
+        background-color: transparent;
+        border: none;
+    }
+
+    #artikel-update .container-fluid .title-berita-lainnya {
+        color: var(--color-white);
+        font-size: 20px;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+
+    #artikel-update .container-fluid .card img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+    #artikel-update .container-fluid .card .card-body .date p, a {
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    #artikel-update .container-fluid .card .card-body .date hr {
+        width: 20px;
+        margin: 0 10px;
+        color: var(--color-silver-desk);
+    }
+
+    #artikel-update .container-fluid .card .card-body .date p, a {
+        color: var(--color-lightblue);
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi a {
+        font-size: 16px !important;
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi a:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--color-white);
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi p {
+        color: var(--color-p-desk);
+        font-size: 12px !important;
+        margin: 0;
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi p span {
+        text-decoration: underline;
+        text-decoration-color: var(--color-p-desk);
+    }
+
+
+    /* artikel latest section */
+
+    #artikel-latest .container-fluid .navbar-artikel {
+        padding: 0 20px;
+        padding-top: 6rem;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel .nav-tabs .nav-item .nav-link {
+        color: var(--color-silver-desk);
+        border: none;
+        border-radius: 50px;
+        padding: 6px 16px;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel .nav-tabs .nav-item .nav-link:hover {
+        border: none !important;
+    }
+
+    #artikel-latest .container-fluid .content-artikel {
+        padding-top: 80px;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card {
+        border: none;
+        background-color: transparent;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .date p{
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--color-latest-p);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .date hr {
+        width: 20px !important;
+        margin: 0 10px;
+        color: var(--color-latest-p);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .date a {
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--color-lightblue);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images a {
+        color: var(--color-bg-black);
+        font-size: 16px !important;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images a:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--color-bg-black);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images p {
+        color: var(--color-bg-black);
+        font-size: 12px !important;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images p span {
+        text-decoration: underline;
+        text-decoration-color: var(--color-bg-black);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .row {
+        flex-direction: column;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel h1 {
+        font-size: 20px !important;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel .nav-tabs .nav-item .nav-link {
+        font-size: 12px !important;
+        padding: 6px 14px;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .images,
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi
+    {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 575px) { 
+
+    /* navbar */
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }    /* navbar */
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+
+    /* section artikel update */
+
+    #artikel-update .container-fluid .title-ap {
+        padding-left: 20px !important;
+        padding-top: 6rem;
+        font-size: 20px !important;
+    }
+
+    #artikel-update .container-fluid .row {
+        padding-left: 20px;
+    }
+
+    #artikel-update .container-fluid .card {
+        background-color: transparent;
+        border: none;
+    }
+
+    #artikel-update .container-fluid .title-berita-lainnya {
+        color: var(--color-white);
+        font-size: 20px;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+
+    #artikel-update .container-fluid .card img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+    #artikel-update .container-fluid .card .card-body .date p, a {
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    #artikel-update .container-fluid .card .card-body .date hr {
+        width: 20px;
+        margin: 0 10px;
+        color: var(--color-silver-desk);
+    }
+
+    #artikel-update .container-fluid .card .card-body .date p, a {
+        color: var(--color-lightblue);
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi a {
+        font-size: 16px !important;
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi a:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--color-white);
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi p {
+        color: var(--color-p-desk);
+        font-size: 12px !important;
+        margin: 0;
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi p span {
+        text-decoration: underline;
+        text-decoration-color: var(--color-p-desk);
+    }
+
+
+    /* artikel latest section */
+
+    #artikel-latest .container-fluid .navbar-artikel {
+        padding: 0 20px;
+        padding-top: 6rem;
+        display: block !important;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel .nav-tabs {
+        margin-top: 20px;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel .nav-tabs .nav-item .nav-link {
+        color: var(--color-silver-desk);
+        border: none;
+        border-radius: 50px;
+        padding: 6px 16px;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel .nav-tabs .nav-item .nav-link:hover {
+        border: none !important;
+    }
+
+    #artikel-latest .container-fluid .content-artikel {
+        padding-top: 80px;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card {
+        border: none;
+        background-color: transparent;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .date p{
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--color-latest-p);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .date hr {
+        width: 20px !important;
+        margin: 0 10px;
+        color: var(--color-latest-p);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .date a {
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--color-lightblue);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images a {
+        color: var(--color-bg-black);
+        font-size: 16px !important;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images a:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--color-bg-black);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images p {
+        color: var(--color-bg-black);
+        font-size: 12px !important;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images p span {
+        text-decoration: underline;
+        text-decoration-color: var(--color-bg-black);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .row {
+        flex-direction: column;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel h1 {
+        font-size: 20px !important;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel .nav-tabs .nav-item .nav-link {
+        font-size: 12px !important;
+        padding: 6px 14px;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .images,
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi
+    {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 479px) { 
+
+    /* navbar */
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+
+    #hero-section .container .subtitle-hero br {
+        display: none;
+    }
+
+
+    /* section artikel update */
+
+    #artikel-update .container-fluid .title-ap {
+        padding-left: 10px !important;
+        padding-top: 6rem;
+        font-size: 20px !important;
+    }
+
+    #artikel-update .container-fluid .row {
+        padding-left: 16px;
+    }
+
+    #artikel-update .container-fluid .card {
+        background-color: transparent;
+        border: none;
+    }
+
+    #artikel-update .container-fluid .title-berita-lainnya {
+        color: var(--color-white);
+        font-size: 20px;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+
+    #artikel-update .container-fluid .card img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+    #artikel-update .container-fluid .card .card-body .date p, a {
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    #artikel-update .container-fluid .card .card-body .date hr {
+        width: 20px;
+        margin: 0 10px;
+        color: var(--color-silver-desk);
+    }
+
+    #artikel-update .container-fluid .card .card-body .date p, a {
+        color: var(--color-lightblue);
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi a {
+        font-size: 14px !important;
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi a:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--color-white);
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi p {
+        color: var(--color-p-desk);
+        font-size: 10px !important;
+        margin: 0;
+    }
+
+    #artikel-update .container-fluid .card .card-body .deskripsi p span {
+        text-decoration: underline;
+        text-decoration-color: var(--color-p-desk);
+    }
+
+
+    /* artikel latest section */
+
+    #artikel-latest .container-fluid .navbar-artikel {
+        padding: 0 10px;
+        padding-top: 6rem;
+        display: block !important;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel .nav-tabs {
+        margin-top: 20px;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel .nav-tabs .nav-item .nav-link {
+        color: var(--color-silver-desk);
+        border: none;
+        border-radius: 50px;
+        padding: 6px 16px;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel .nav-tabs .nav-item .nav-link:hover {
+        border: none !important;
+    }
+
+    #artikel-latest .container-fluid .content-artikel {
+        padding-top: 80px;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card {
+        border: none;
+        background-color: transparent;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .date p{
+        font-size: 10px;
+        text-decoration: none;
+        color: var(--color-latest-p);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .date hr {
+        width: 20px !important;
+        margin: 0 10px;
+        color: var(--color-latest-p);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .date a {
+        font-size: 10px;
+        text-decoration: none;
+        color: var(--color-lightblue);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images a {
+        color: var(--color-bg-black);
+        font-size: 14px !important;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images a:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--color-bg-black);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images p {
+        color: var(--color-bg-black);
+        font-size: 10px !important;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi .deskripsi-images p span {
+        text-decoration: underline;
+        text-decoration-color: var(--color-bg-black);
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .row {
+        flex-direction: column;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel h1 {
+        font-size: 20px !important;
+    }
+
+    #artikel-latest .container-fluid .navbar-artikel .nav-tabs .nav-item .nav-link {
+        font-size: 12px !important;
+        padding: 6px 14px;
+    }
+
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .images,
+    #artikel-latest .container-fluid .content-artikel .content .card .card-body .deskripsi
+    {
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 280px;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+
 }

@@ -1,0 +1,96 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* varible color */
+:root {
+    --color-white: #FFFEFC;
+    --color-silver: #B5B5B5;
+    --color-black: #000000;
+    --color-lightblue: #5B5FF1;
+}
+
+/* atur ke semua selector */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* hilangkan scrolbar */
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* section signin */
+
+#content-signin {
+    height: 100vh;
+    background-color: var(--color-white);
+}
+
+#content-signin .text a {
+    text-decoration: none;
+}
+
+#content-signin .form-signin .form-control-auth {
+    width: 70%;
+}
+
+#content-signin .form-signin .form-control-auth .form .em,
+#content-signin .form-signin .form-control-auth .form .pw
+{
+    border-bottom: 3px solid black;
+    transition: 0.3 ease-in-out;
+}
+
+#content-signin .form-signin .form-control-auth .form .em:hover,
+#content-signin .form-signin .form-control-auth .form .pw:hover
+{
+    border-bottom: 3px solid var(--color-lightblue);
+}
+
+#content-signin .form-signin .form-control-auth .form .em span,
+#content-signin .form-signin .form-control-auth .form .em input,
+#content-signin .form-signin .form-control-auth .form .pw span,
+#content-signin .form-signin .form-control-auth .form .pw input,
+#content-signin .form-signin .form-control-auth .form .pw button, 
+#content-signin .form-signin .form-control-auth .form .pw button span 
+{
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#content-signin .form-signin .form-control-auth .form .remember a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+#content-signin .form-signin .form-control-auth .form .btn-signin button {
+    background-color: var(--color-lightblue);
+    width: 100%;
+    color: var(--color-white);
+    border-radius: 50px;
+    padding: 10px 0;
+}
+
+#content-signin .text-second p {
+    color: var(--color-silver);
+}
+
+#content-signin .text-second a img {
+    transition: 0.3s ease-in-out;
+}
+
+#content-signin .text-second a img:hover {
+    transform: scale(0.9);
+}
