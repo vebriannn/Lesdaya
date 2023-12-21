@@ -47,7 +47,8 @@ body::-webkit-scrollbar{
 
 #content-signup .form-signup .form-control-auth .form .em,
 #content-signup .form-signup .form-control-auth .form .usr,
-#content-signup .form-signup .form-control-auth .form .pw
+#content-signup .form-signup .form-control-auth .form .pw,
+#content-signup .form-signup .form-control-auth .form .pwconfrm
 {
     border-bottom: 3px solid black;
     transition: 0.3 ease-in-out;
@@ -55,7 +56,8 @@ body::-webkit-scrollbar{
 
 #content-signup .form-signup .form-control-auth .form .em:hover,
 #content-signup .form-signup .form-control-auth .form .usr:hover,
-#content-signup .form-signup .form-control-auth .form .pw:hover
+#content-signup .form-signup .form-control-auth .form .pw:hover,
+#content-signup .form-signup .form-control-auth .form .pwconfrm:hover
 {
     border-bottom: 3px solid var(--color-lightblue);
 }
@@ -67,7 +69,7 @@ body::-webkit-scrollbar{
 #content-signup .form-signup .form-control-auth .form .pw span,
 #content-signup .form-signup .form-control-auth .form .pw input,
 #content-signup .form-signup .form-control-auth .form .pw button, 
-#content-signup .form-signup .form-control-auth .form .pw button span 
+#content-signup .form-signup .form-control-auth .form .pw button span,
 #content-signup .form-signup .form-control-auth .form .pwconfrm span,
 #content-signup .form-signup .form-control-auth .form .pwconfrm input,
 #content-signup .form-signup .form-control-auth .form .pwconfrm button, 
@@ -86,3 +88,32 @@ body::-webkit-scrollbar{
     padding: 10px 0;
 }
 
+@media screen and (min-width: 0px) and (max-width: 991px) {
+
+    header {
+        display: none !important;
+    }
+
+    #content-signup .images {
+        display: none !important;
+    }
+
+    #content-signup .form-signup  {
+        margin: 0 auto;
+    }
+
+    #content-signup .form-signup .form-control-auth .text .subtitle br{
+        display: none;
+    }
+
+
+    #content-signup {
+        height: max-content;
+        background-color: var(--color-white);
+        padding: 50px 0;
+    }
+
+    #content-signup .form-signup .form-control-auth .form .btn-signup button {
+        font-size: 16px !important;
+    }
+}

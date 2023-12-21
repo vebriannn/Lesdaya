@@ -41,9 +41,6 @@ body::-webkit-scrollbar{
     text-decoration: none;
 }
 
-#content-signin .form-signin .form-control-auth {
-    width: 70%;
-}
 
 #content-signin .form-signin .form-control-auth .form .em,
 #content-signin .form-signin .form-control-auth .form .pw
@@ -93,4 +90,46 @@ body::-webkit-scrollbar{
 
 #content-signin .text-second a img:hover {
     transform: scale(0.9);
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 991px) {
+
+    header {
+        display: none !important;
+    }
+
+    #content-signin .images {
+        display: none !important;
+    }
+
+    #content-signin .form-signin  {
+        margin: 0 auto;
+    }
+
+    #content-signin .form-signin .form-control-auth .text .subtitle br{
+        display: none;
+    }
+
+    #content-signin .text-second a img {
+        width: 34px;
+    }
+
+    #content-signin .form-signin .form-control-auth .form .remember a,
+    #content-signin .form-signin .form-control-auth .form .remember label
+    {
+        font-size: 14px !important;
+    }
+
+
+    #content-signin {
+        height: max-content;
+        background-color: var(--color-white);
+        padding: 50px 0;
+    }
+
+    #content-signin .form-signin .form-control-auth .form .btn-signin button {
+        font-size: 16px !important;
+    }
+
 }

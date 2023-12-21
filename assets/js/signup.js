@@ -1,7 +1,8 @@
 const showIcon = document.getElementById('show')
 const btnShow = document.querySelectorAll('.btnShow')
 const pwne = document.getElementById('pwne')
-
+const columnImages = document.querySelector('.images')  
+const widthForm = document.querySelector('.form-control-auth')
 
 btnShow.forEach(element => {
     element.addEventListener('click', () => {
@@ -20,3 +21,11 @@ btnShow.forEach(element => {
         }
     })
 })
+
+
+if(window.innerWidth < 576) {
+    widthForm.style.width = "300px"
+}
+else {
+    widthForm.style.width = "400px"
+}

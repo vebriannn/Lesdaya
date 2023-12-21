@@ -1,6 +1,9 @@
 const showIcon = document.getElementById('show')
 const btnShow = document.getElementById('btnShow')
 const pwne = document.getElementById('pwne')
+const columnImages = document.querySelector('.images')  
+const widthForm = document.querySelector('.form-control-auth')
+
 
 
 btnShow.addEventListener('click', () => {
@@ -13,3 +16,11 @@ btnShow.addEventListener('click', () => {
         pwne.type = "password"
     }
 })
+
+
+if(window.innerWidth < 576) {
+    widthForm.style.width = "300px"
+}
+else {
+    widthForm.style.width = "400px"
+}
