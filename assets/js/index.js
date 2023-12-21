@@ -1,4 +1,6 @@
 const idHeader = document.querySelector('header');
+const btnDownload = document.querySelector('.btn-dd')
+const btnView = document.querySelector('.btn-view')
 
 window.addEventListener('scroll', () => {
     if(window.scrollY > 1) {
@@ -30,3 +32,11 @@ $(document).ready(function() {
         }
     })
 });
+
+btnView.addEventListener('click', () => {
+    window.open('https://drive.google.com/file/d/1xhvw0moef_95ndcI4Mj3z4qnzIBIu5xY/view','_blank');
+})
+
+btnDownload.addEventListener('click', () => {
+    window.open('https://drive.google.com/u/0/uc?id=1xhvw0moef_95ndcI4Mj3z4qnzIBIu5xY&export=download', '_blank')
+})

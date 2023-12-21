@@ -6,9 +6,18 @@ const artikelUpdate = document.getElementById('artikel-update')
 const artikelLatest = document.getElementById('artikel-latest')
 
 
+if(window.innerWidth < 992) {
+    idHeader.classList.add("actived-mobile");
+}
+else {
+    idHeader.classList.remove("actived-mobile");
+}
+
+
 // navbar sticky
 window.addEventListener('scroll', () => {
     
+
     // navbar sticky
     if(window.scrollY > 1) {
         idHeader.classList.add("scrol-actived");
@@ -22,17 +31,18 @@ window.addEventListener('scroll', () => {
 
 })
 
-window.addEventListener('resize', () => {
-    if(window.innerWidth < 768) {
-        artikelUpdate.querySelector('.container').classList.replace('container', 'container-fluid')
-        artikelLatest.querySelector('.container').classList.replace('container', 'container-fluid')
-    }
-    else {
-        artikelUpdate.querySelector('.container-fluid').classList.replace('container-fluid', 'container')
-        artikelLatest.querySelector('.container-fluid').classList.replace('container-fluid', 'container')
-    }
+
+if(window.innerWidth < 768) {
+    artikelUpdate.querySelector('.container').classList.replace('container', 'container-fluid')
+    artikelLatest.querySelector('.container').classList.replace('container', 'container-fluid')
     
-})
+}
+else {
+    artikelUpdate.querySelector('.container-fluid').classList.replace('container-fluid', 'container')
+    artikelLatest.querySelector('.container-fluid').classList.replace('container-fluid', 'container')
+}
+
+
 
 
 

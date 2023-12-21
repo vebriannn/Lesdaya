@@ -273,7 +273,8 @@ footer .container .copyright p .link-underline {
     color: var(--color-white) !important;
 }
 
-.scrol-actived {
+.scrol-actived,
+.actived-mobile {
     backdrop-filter: blur(10px); /* Sesuaikan nilai blur sesuai kebutuhan */
     background-color: rgba(255, 255, 255, 0.5); /* Sesuaikan warna dan opasitas sesuai kebutuhan */
 }
@@ -769,7 +770,7 @@ footer .container .copyright p .link-underline {
 
     #artikel-update .container-fluid .title-ap {
         padding-left: 10px !important;
-        padding-top: 6rem;
+        padding-top: 3rem;
         font-size: 20px !important;
     }
 
