@@ -1,0 +1,1089 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* varible color */
+:root {
+    --color-white: #FFFFFF;
+    --color-silver: #DFE1F5;
+    --color-black: #000000;
+    --color-lightblue: #5B5FF1;
+    --color-silver-desk: #A7A7A7;
+    --color-paragraph: #6D758F;
+    --color-background: #F9F9FF;
+    --color-title: #4A4A4A;
+    --color-button: #363636;
+    --color-border: #E1E4ED;
+    --color--bg-modal: #F6F8FD;
+    --color--text-modal: #E8EFFF;
+}
+
+
+/* atur ke semua selector */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+body::-webkit-scrollbar {
+	width: 0;
+}
+
+/* header */
+header .navbar .container a {
+    color: var(--color-paragraph);
+    font-weight: 300;
+    transition: 0.3s ease;
+}
+
+header .navbar .container a:hover {
+    color: var(--color-paragraph);
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link a {
+    font-weight: 500;
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+    border: 2px solid var(--color-paragraph);
+    border-radius: 40px;
+    padding: 0 20px;
+    transition: 0.3s ease-in-out;
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup:hover{
+    border: 2px solid var(--color-paragraph);
+    background-color: var(--color-paragraph);
+    color: var(--color-black);
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup a:hover {
+    color: var(--color-black);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--color-paragraph) !important;
+    font-weight: 600 !important;
+}
+
+.scrol-actived,
+.actived-mobile {
+    backdrop-filter: blur(10px); /* Sesuaikan nilai blur sesuai kebutuhan */
+    background-color: rgba(255, 255, 255, 0.5); /* Sesuaikan warna dan opasitas sesuai kebutuhan */
+}
+
+/* hero section */
+#hero-section {
+    height: auto;
+    padding-top: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+#hero-section .container .title {
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--color-title);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+}
+
+#hero-section .container .title span {
+    color: var(--color-lightblue);
+    font-weight: 700;
+}
+
+#hero-section .container .subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-paragraph);
+}
+
+#hero-section .container .button-wrapper {
+    gap: 40px;
+    margin-top: 40px;
+}
+
+#hero-section .container .button-wrapper .button-1 button{
+    padding: 12px 50px !important;
+    background: var(--color-lightblue);
+    color: var(--color-white);
+    border-radius: 6px;
+    border: 1px solid var(--color-lightblue);
+    border-radius: 30px;
+}
+
+/* modal */
+
+#modal-diskusi .modal .modal-dialog .modal-content {
+    background-color: var(--color--bg-modal) !important;
+}
+
+#modal-diskusi .modal .modal-dialog .modal-content .modal-header {
+    border-bottom: 2px solid var(--color-black);
+}
+
+#modal-diskusi .modal .modal-dialog .modal-content .modal-body form .mb-3:nth-child(1) input {
+    border-radius: 40px;
+    padding: 12px 0;
+    padding-left: 20px;
+    background-color: var(--color--text-modal);
+    border: none;
+    box-shadow: none;
+}
+
+#modal-diskusi .modal .modal-dialog .modal-content .modal-body form .text-area-style textarea {
+    border-radius: 10px;
+    background-color: var(--color--text-modal);
+}
+
+#modal-diskusi .modal .modal-dialog .modal-content .modal-footer button {
+    border-radius: 60px !important;
+}
+
+#modal-diskusi .modal .modal-dialog .modal-content .modal-footer{
+    border: none;
+}
+
+/* discus-section */
+#discus-section {
+    height: auto;
+    margin-bottom: 200px;
+
+}
+
+#discus-section .flex-column button {
+    color: var(--color-black);
+    text-align: left;
+    opacity: 0.5;
+    padding: 10px 0;
+    text-align: left;
+}
+
+#discus-section .title h5 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#discus-section .flex-column button.active {
+    color: var(--color-black);
+    background: transparent;
+    border-bottom: 1px solid var(--color-black);
+    border-radius: 0px;
+    opacity: 1;
+    padding: 10px 0;
+    text-align: left;
+}
+
+#discus-section .images-wrapper {
+    width: 0;
+    height: 0;
+    z-index: 1;
+    position: relative;
+    left: 20px;
+    top: 12px;
+}
+#discus-section .images-wrapper i {
+    font-size: 18px;
+}
+
+#discus-section .input-group input {
+    width: max-content;
+    padding: 12px 40px 12px 56px;
+    border-radius: 30px;
+}
+
+#discus-section .filter-p {
+    opacity: 0.5;
+}
+
+#discus-section .filter-p span {
+    opacity: 1;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+#discus-section .card-group {
+    margin-top: 20px;
+}
+
+#discus-section .card-group .card {
+    height: auto;
+    padding: 20px 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 16px 1px #e8e9f4;
+}
+
+#discus-section .card-group .card h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#discus-section .card-group .card .profile .name {
+    line-height: 10px;
+    margin-top: 6px;
+}
+
+#discus-section .card-group .card .profile .name h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#discus-section .card-group .card .profile .name p {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+#discus-section .tab-pane nav {
+    margin-top: 20px;
+}
+
+#discus-section .tab-pane nav .page-item1 {
+    margin-right: auto;
+}
+
+#discus-section .tab-pane nav .page-item2 {
+    margin-left: auto;
+}
+
+#discus-section .tab-pane nav .page-item .terbaru {
+    border-radius: 8px;
+    padding: 10px 30px;
+    background-color: var(--color-lightblue);
+}
+
+#discus-section .tab-pane nav .page-item .terlama {
+    border-radius: 8px;
+    padding: 10px 30px;
+    background-color: var(--color-lightblue);
+}
+
+#discus-section .tab-pane nav .page-item a {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+#discus-section .tab-pane nav .page-item .number {
+    margin-top: 6px;
+    margin-left: 10px;
+    border-radius: 6px;
+    padding: 8px 10px;
+    background-color: var(--color-button);
+}
+
+#discus-section .tab-pane nav .page-item .number-1 {
+    margin-left: 0;
+}
+
+/* modal style */
+
+/* footer */ 
+footer {
+    margin-top: 200px;
+    padding-top: 6rem;
+    height: max-content;
+    background-color: rgba(54, 54, 54, 1);
+}
+
+footer .container .text-group .link p {
+    color: rgba(180, 185, 201, 1);
+}
+
+footer .container .text-group .social-media .row .col-md-1 img{
+    width: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .container .text-group .social-media .row .col-md-1 img:hover{
+    transform: translateY(-10px);
+}
+
+footer .container .copyright{
+    border-top: 2px solid rgba(225, 228, 237, 1);
+    margin-top: 80px;
+}
+
+footer .container .copyright p {
+    color: rgba(180, 185, 201, 1);
+}
+
+footer .container .copyright p .garis {
+    color: rgba(255, 255, 255, 1);
+}
+
+footer .container .copyright p .link-underline {
+    color: rgba(109, 117, 143, 1);
+    text-decoration: underline;
+    
+    text-decoration-color: rgba(109, 117, 143, 1) !important;
+}
+
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+    #category-section .slider-wrapper .slide-button {
+        display: none !important;
+    }
+
+    #category-section .slider-wrapper .image-list {
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    #category-section .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+
+    #category-section .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* responsive hp */
+@media screen and (min-width: 0px) and (max-width: 479px) {
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    /* navbar */
+    section {
+        overflow: hidden;
+    }
+
+    /* hero section */
+    #hero-section {
+        margin-top: 50px;
+        margin-bottom: 250px;
+    }
+
+    #hero-section h1 br {
+        display: none;
+    }
+
+    #hero-section h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #hero-section p br {
+        display: none;
+    }
+
+    #hero-section p {
+        font-size: 15px !important;
+        font-weight: 400;
+    }
+
+    #hero-section .button-wrapper .button-1 button {
+        font-size: 12px !important;
+    } 
+
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-footer button,
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-body form .mb-3:nth-child(1) input,
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-body form .text-area-style textarea,
+    .floatingTextarea2,
+    .modal-title {
+        font-size: 12px !important;
+    }
+
+
+    #discus-section .col-lg-10 .input-group {
+        margin-top: 40px;
+    }
+
+    #discus-section .col-lg-10 nav .page-item .terbaru{
+        display: none;
+    }
+
+    #discus-section .col-lg-10 nav .page-item .terlama{
+        display: none;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 576px) {
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    /* navbar */
+    section {
+        overflow: hidden;
+    }
+
+    /* hero section */
+    #hero-section {
+        margin-bottom: 250px;
+    }
+
+    #hero-section h1 br {
+        display: none;
+    }
+
+    #hero-section h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #hero-section p br {
+        display: none;
+    }
+
+    #hero-section p {
+        font-size: 15px !important;
+        font-weight: 400;
+    }
+
+    #hero-section .button-wrapper .button-1 button {
+        font-size: 12px !important;
+        padding: 12px 52px 12px 12px !important;
+    }
+
+    #hero-section .button-wrapper .button-2 button {
+        font-size: 12px !important;
+        padding: 12px 32px 12px 32px !important;
+    }
+
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-footer button,
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-body form .mb-3:nth-child(1) input,
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-body form .text-area-style textarea,
+    .floatingTextarea2,
+    .modal-title {
+        font-size: 14px !important;
+    }
+
+
+    /* image-slider-section */
+    #image-slider {
+        margin-bottom: 550px;
+    }
+
+    #image-slider img {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    /* category-section */
+    #category-section {
+        margin-top: -400px !important;
+    }
+
+    #category-section .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .title p br {
+        display: none;
+    }
+
+    #category-section .nav-category {
+        margin-left: 6px;
+    }
+
+    #category-section .col-lg-3 .card {
+        margin-top: 10px;
+        height: 400px;
+        width: 248px;
+        background-position: center;
+        background-size: cover;
+        border: none;
+        padding: 40px 30px;
+        color: var(--color-white);
+        transition: all 0.3s ease;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        background-color: var(--color-background);
+    }
+
+    #category-section .section-tradisi-budaya .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .section-tradisi-budaya .title h1 br {
+        display: none;
+    }
+
+    #category-section .section-tradisi-budaya .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .section-tradisi-budaya .select-image {
+        display: flex;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item {
+        width: 48%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link {
+        background: transparent;
+        color: var(--color-black);
+        border: 1px solid var(--color-border);
+        padding: 20px 20px 10px 10px;
+        display: flex;
+        width: 250px;
+        filter: blur(2px);
+        opacity: 0.8;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link.active {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .col-text {
+        text-align: left !important;
+        padding: 20px 10px;
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .row {
+        margin: 0 !important;
+    }
+
+    #category-section .title-2 {
+        margin-top: 80px;
+    }
+
+    #category-section .title-2 h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title-2 p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .container-slider {
+        width: 564px;
+        margin: 0;
+        margin-left: -20px;
+
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    /* navbar */
+    section {
+        overflow: hidden;
+    }
+
+    /* hero section */
+    #hero-section {
+        margin-bottom: 250px;
+    }
+
+    #hero-section h1 br {
+        display: none;
+    }
+
+    #hero-section h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #hero-section p br {
+        display: none;
+    }
+
+    #hero-section p {
+        font-size: 15px !important;
+        font-weight: 400;
+    }
+
+    #hero-section .button-wrapper .button-1 button {
+        font-size: 12px !important;
+        padding: 12px 52px 12px 12px !important;
+    }
+
+    #hero-section .button-wrapper .button-2 button {
+        font-size: 12px !important;
+        padding: 12px 32px 12px 32px !important;
+    }
+
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-footer button,
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-body form .mb-3:nth-child(1) input,
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-body form .text-area-style textarea,
+    .floatingTextarea2,
+    .modal-title {
+        font-size: 16px !important;
+    }
+
+
+    /* image-slider-section */
+    #image-slider {
+        margin-bottom: 550px;
+    }
+
+    #image-slider img {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    /* category-section */
+    #category-section {
+        margin-top: -400px !important;
+    }
+
+    #category-section .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .title p br {
+        display: none;
+    }
+
+    #category-section .nav-category {
+        margin-left: 6px;
+    }
+
+    #category-section .col-lg-3 .card {
+        margin-left: -32px;
+        margin-top: 10px;
+        height: 400px;
+        width: 560px;
+        background-position: center;
+        background-size: cover;
+        border: none;
+        padding: 40px 30px;
+        color: var(--color-white);
+        transition: all 0.3s ease;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        background-color: var(--color-background);
+    }
+
+    #category-section .section-tradisi-budaya .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .section-tradisi-budaya .title h1 br {
+        display: none;
+    }
+
+    #category-section .section-tradisi-budaya .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link {
+        background: transparent;
+        color: var(--color-black);
+        border: 1px solid var(--color-border);
+        padding: 20px 20px 10px 10px;
+        display: flex;
+        filter: blur(2px);
+        opacity: 0.8;
+        width: 100%;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link.active {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .col-text {
+        text-align: left !important;
+        padding: 20px 10px;
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .row {
+        margin: 0 !important;
+    }
+
+    #category-section .title-2 {
+        margin-top: 80px;
+    }
+
+    #category-section .title-2 h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title-2 p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .container-slider {
+        width: 550px;
+        margin: 0;
+        margin-left: -24px;
+
+    }
+
+    footer 
+    
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    section {
+        overflow: hidden;
+    }
+
+    /* hero section */
+    #hero-section {
+        margin-bottom: 250px;
+    }
+
+    #hero-section h1 br {
+        display: none;
+    }
+
+    #hero-section h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #hero-section p br {
+        display: none;
+    }
+
+    #hero-section p {
+        font-size: 15px !important;
+        font-weight: 400;
+    }
+
+    #hero-section .button-wrapper .button-1 button {
+        font-size: 12px !important;
+        padding: 12px 52px 12px 12px !important;
+    }
+
+    #hero-section .button-wrapper .button-2 button {
+        font-size: 12px !important;
+        padding: 12px 32px 12px 32px !important;
+    }
+
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-footer button,
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-body form .mb-3:nth-child(1) input,
+    #modal-diskusi .modal .modal-dialog .modal-content .modal-body form .text-area-style textarea,
+    .floatingTextarea2,
+    .modal-title {
+        font-size: 18px !important;
+    }
+
+
+    /* image-slider-section */
+    #image-slider {
+        margin-bottom: 550px;
+    }
+
+    #image-slider img {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    /* category-section */
+    #category-section {
+        margin-top: -400px !important;
+    }
+
+    #category-section .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .title p br {
+        display: none;
+    }
+
+    #category-section .nav-category {
+        margin-left: 6px;
+    }
+
+    #category-section .col-lg-3 .card {
+        margin-left: -42px;
+        margin-top: 10px;
+        height: 400px;
+        width: 760px;
+        background-position: center;
+        background-size: cover;
+        border: none;
+        padding: 100px 80px;
+        color: var(--color-white);
+        transition: all 0.3s ease;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        background-color: var(--color-background);
+    }
+
+    #category-section .section-tradisi-budaya .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .section-tradisi-budaya .title h1 br {
+        display: none;
+    }
+
+    #category-section .section-tradisi-budaya .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link {
+        background: transparent;
+        color: var(--color-black);
+        border: 1px solid var(--color-border);
+        padding: 20px 20px 10px 10px;
+        display: flex;
+        filter: blur(2px);
+        opacity: 0.8;
+        width: 100%;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link.active {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .col-text {
+        text-align: left !important;
+        padding: 20px 10px;
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .row {
+        margin: 0 !important;
+    }
+
+    #category-section .title-2 {
+        margin-top: 80px;
+    }
+
+    #category-section .title-2 h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title-2 p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .container-slider {
+        width: 550px;
+        margin: 0;
+        margin-left: -24px;
+
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}

@@ -1,0 +1,1570 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* varible color */
+:root {
+    --color-white: #FFFFFF;
+    --color-silver: #DFE1F5;
+    --color-black: #000000;
+    --color-lightblue: #5B5FF1;
+    --color-silver-desk: #A7A7A7;
+    --color-paragraph: #6D758F;
+    --color-background: #F9F9FF;
+    --color-title: #4A4A4A;
+    --color-button: #363636;
+    --color-border: #E1E4ED;
+}
+
+
+/* atur ke semua selector */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+body::-webkit-scrollbar {
+	width: 0;
+}
+
+/* header */
+header .navbar .container a {
+    color: var(--color-paragraph);
+    font-weight: 300;
+    transition: 0.3s ease;
+}
+
+header .navbar .container a:hover {
+    color: var(--color-paragraph);
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link a {
+    font-weight: 500;
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+    border: 2px solid var(--color-paragraph);
+    border-radius: 40px;
+    padding: 0 20px;
+    transition: 0.3s ease-in-out;
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup:hover{
+    border: 2px solid var(--color-paragraph);
+    background-color: var(--color-paragraph);
+    color: var(--color-black);
+}
+
+header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup a:hover {
+    color: var(--color-black);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--color-paragraph) !important;
+    font-weight: 600 !important;
+}
+
+.scrol-actived,
+.actived-mobile {
+    backdrop-filter: blur(10px); /* Sesuaikan nilai blur sesuai kebutuhan */
+    background-color: rgba(255, 255, 255, 0.5); /* Sesuaikan warna dan opasitas sesuai kebutuhan */
+}
+
+/* hero section */
+#hero-section {
+    height: auto;
+    padding-top: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 280px;
+}
+
+#hero-section .container .title {
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--color-title);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+}
+
+#hero-section .container .title span {
+    color: var(--color-lightblue);
+    font-weight: 700;
+}
+
+#hero-section .container .subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-paragraph);
+}
+
+#hero-section .container .button-wrapper {
+    gap: 40px;
+    margin-top: 40px;
+}
+
+#hero-section .container .button-wrapper .button-1 button{
+    padding: 10px 50px 10px 30px;
+    background: var(--color-button);
+    color: var(--color-white);
+    border-radius: 6px;
+}
+
+#hero-section .container .button-wrapper .button-1 .icon {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    margin-left: -30px;
+    margin-top: 12px;
+}
+
+#hero-section .container .button-wrapper .button-2 button {
+    padding: 10px 30px 10px 30px;
+    background: transparent;
+    color: var(--color-title);
+    border: 1px solid var(--color-title);
+    border-radius: 6px;
+}
+
+#hero-section .container .button-wrapper .button-1 .icon i {
+    color: var(--color-white);
+    font-size: 16px;
+}
+
+/* image-slider */
+#image-slider {
+    height: auto;
+    margin-bottom: 600px;
+    margin-top: -180px;
+}
+
+#image-slider .title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+#image-slider .title h1 {
+    font-size: 55px;
+    font-family: "Skygraze-PKYod", sans-serif;
+}
+
+#image-slider .title h1 span {
+    font-size: 55px;
+    font-family: "Skygraze-PKYod", sans-serif;
+    color: #6A4BFF;
+}
+
+#image-slider .title p {
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+#image-slider .logos {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+#image-slider .logos .logos-slide {
+    animation: 15s slide infinite linear;
+    display: inline-block;
+}
+
+#image-slider .logos .logos-slide img {
+    margin-left: 0px;
+    border-radius: 6px;
+}
+
+#image-slider .logos .logos-slide img:first-child {
+    margin-top: 80px;
+}
+
+#image-slider .logos .logos-slide img:nth-child(3) {
+    margin-top: 80px;
+}
+
+#image-slider .logos .logos-slide img:nth-child(5) {
+    margin-top: 80px;
+}
+
+/* category-section */
+#category-section {
+    height: auto;
+    margin-bottom: 200px;
+    margin-top: -400px;
+}
+
+#category-section .title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#category-section .title h1 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+#category-section .title-2 {
+    text-align: left;
+    margin-top: 200px;
+}
+
+#category-section .title h1 span {
+    color: var(--color-lightblue);
+}
+
+#category-section .title p {
+    font-size: 16px;
+    color: var(--color-title);
+}
+
+#category-section .nav-tabs {
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+
+#category-section .nav-tabs .nav-item1 button {
+    background: transparent;
+    border: none;
+    padding: 10px 104px;
+    color: var(--color-paragraph);
+    opacity: 0.6;
+}
+
+#category-section .nav-tabs .nav-item1 button.active {
+    border: none;
+    padding: 10px 104px;
+    font-weight: 600;
+    opacity: 1;
+    border-bottom: 1px solid var(--color-paragraph);
+    color: var([--color-paragraph]);
+}
+
+#category-section .nav-tabs .nav-item2 button:hover {
+    border: none;
+    background: transparent;
+}
+
+#category-section .nav-tabs .nav-item1 button.nav-link.active,
+#category-section .nav-tabs .nav-item1 button.nav-link:hover,
+#category-section .nav-tabs .nav-item1 button.nav-link:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn:focus,
+.btn:active,
+button:focus,
+button:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+#category-section .nav-tabs .nav-item2 button.active {
+    background: transparent;
+    border: none;
+    margin-top: -20px;
+    filter: grayscale(100%);
+}
+
+#category-section .col-lg-3 .card {
+    margin-top: 10px;
+    height: 450px;
+    width: 310px;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    padding: 40px 30px;
+    color: var(--color-white);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    background-color: var(--color-background);
+}
+
+#category-section .col-lg-3 .card:hover {
+    filter: grayscale(0%);
+    transition: all 0.3s ease;
+}
+
+#category-section .col-lg-3 .card .text p {
+    font-weight: 200;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+#category-section .col-lg-3 a {
+    text-decoration: none;
+}
+
+#category-section .konten {
+    margin-top: 150px;
+}
+
+#category-section .konten .title h1 span {
+    color: var(--color-lightblue);
+}
+
+#category-section .konten ul {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+#category-section .konten ul button {
+    background: transparent;
+    color: var(--color-black);
+    border: 1px solid var(--color-border);
+    padding: 20px 20px 10px 10px;
+    display: flex;
+    width: 302px;
+    opacity: 0.8;
+}
+
+#category-section .konten ul button.active {
+    background: transparent;
+    color: var(--color-black);
+    border: 1px solid var(--color-border);
+    padding: 20px 20px 10px 10px;
+    display: flex;
+    width: 302px;
+    opacity: 1;
+    filter: blur(0px);
+}
+
+#category-section .konten ul button .text {
+    text-align: left;
+    margin-left: 10px;
+}
+
+#category-section .konten ul button .text h4 {
+    font-size: 18px;
+}
+
+#category-section .konten ul button .text p {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+#category-section .konten .tab-content {
+    margin-top: 80px;
+}
+
+#category-section .konten .tab-content .row .col-image {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#category-section .konten .tab-content .row .col-text {
+    border: 1px solid var(--color-border);
+    border-left: 0px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 40px 120px 40px 80px;
+}
+
+#category-section .konten .tab-content .row .col-text .info h4 {
+    font-size: 18px;
+    color: var(--color-button);
+}
+
+#category-section .konten .tab-content .row .col-text .info p {
+    font-size: 14px;
+    opacity: 0.5;
+    color: var(--color-button);
+}
+
+#category-section .section-tradisi-budaya .nav-link {
+    filter: blur(2px);
+}
+
+#category-section .section-tradisi-budaya .nav-link.active {
+    filter: blur(0px);
+}
+
+/* slider galeri */
+
+
+#category-section  .slider-wrapper {
+    position: relative;
+}
+
+#category-section  .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+#category-section  .slider-wrapper .slide-button:hover {
+    background: #404040;
+}
+
+#category-section  .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+}
+
+#category-section  .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+}
+
+#category-section  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    border-radius: 10px;
+    scrollbar-width: none;
+}
+
+#category-section  .slider-wrapper .image-list .wrapper .text {
+    width: 120px;
+    height: 0;
+    position: relative;
+    left: 40px;
+    top: 40px;
+}
+
+#category-section  .slider-wrapper .image-list .wrapper .text h5 {
+    font-size: 14px;
+    color: var(--color-white);
+    font-weight: 400;
+    word-wrap: 12px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+#category-section  .slider-wrapper .image-list .wrapper .text h1 {
+    font-size: 30px;
+    color: var(--color-white);
+    font-weight: 500;
+    word-wrap: 12px;
+}
+
+#category-section  .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+
+#category-section  .slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#category-section  .container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#category-section  .slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+}
+
+#category-section  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+}
+
+#category-section  .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+}
+
+#category-section  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+
+#category-section  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+/* section event */
+
+#event-section {
+    background-color: var(--color-background);
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
+
+#event-section .container .card {
+    border: 0;
+    background-color: rgba(54, 54, 54, 1);
+    padding: 60px 50px;
+}
+
+#event-section .container .card .text .btn-group button {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#event-section .container .card .text .btn-group button:first-child {
+    color: rgba(109, 117, 143, 1);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-white);
+    transition: 0.3s ease-in-out;
+}
+
+#event-section .container .card .text .btn-group button:first-child:hover {
+    color: var(--color-white);
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+}
+
+#event-section .container .card .text .btn-group button:last-child {
+    color: var(--color-white);
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    transition: 0.3s ease-in-out;
+}
+
+#event-section .container .card .text .btn-group button:last-child:hover {
+    color: rgba(109, 117, 143, 1);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-white);
+}
+
+#event-section .container .card .imges {
+    position: absolute;
+    right: 50px;
+}
+
+
+#prev-slide {
+    position: absolute;
+    left: 0;
+}
+
+#next-slide {
+    position: absolute;
+    right: 0;
+}
+
+#prev-slide2 {
+    position: absolute;
+    left: 0;
+}
+
+#next-slide2 {
+    position: absolute;
+    right: 0;
+}
+
+#prev-slide3 {
+    position: absolute;
+    left: 0;
+}
+
+#next-slide3 {
+    position: absolute;
+    right: 0;
+}
+
+/* footer */ 
+footer {
+    margin-top: 200px;
+    padding-top: 6rem;
+    height: max-content;
+    background-color: rgba(54, 54, 54, 1);
+}
+
+footer .container .text-group .link p {
+    color: rgba(180, 185, 201, 1);
+}
+
+footer .container .text-group .social-media .row .col-md-1 img{
+    width: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .container .text-group .social-media .row .col-md-1 img:hover{
+    transform: translateY(-10px);
+}
+
+footer .container .copyright{
+    border-top: 2px solid rgba(225, 228, 237, 1);
+    margin-top: 80px;
+}
+
+footer .container .copyright p {
+    color: rgba(180, 185, 201, 1);
+}
+
+footer .container .copyright p .garis {
+    color: rgba(255, 255, 255, 1);
+}
+
+footer .container .copyright p .link-underline {
+    color: rgba(109, 117, 143, 1);
+    text-decoration: underline;
+    
+    text-decoration-color: rgba(109, 117, 143, 1) !important;
+}
+
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+    #category-section .slider-wrapper .slide-button {
+        display: none !important;
+    }
+
+    #category-section .slider-wrapper .image-list {
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    #category-section .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+
+    #category-section .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* responsive hp */
+@media screen and (min-width: 0px) and (max-width: 479px) {
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    /* navbar */
+    section {
+        overflow: hidden;
+    }
+
+    /* hero section */
+    #hero-section {
+        margin-bottom: 250px;
+    }
+
+    #hero-section h1 br {
+        display: none;
+    }
+
+    #hero-section h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #hero-section p br {
+        display: none;
+    }
+
+    #hero-section p {
+        font-size: 15px !important;
+        font-weight: 400;
+    }
+
+    #hero-section .button-wrapper .button-1 button {
+        font-size: 12px !important;
+        padding: 12px 52px 12px 12px !important;
+    }
+
+    #hero-section .button-wrapper .button-2 button {
+        font-size: 12px !important;
+        padding: 12px 32px 12px 32px !important;
+    }
+
+    /* image-slider-section */
+    #image-slider {
+        margin-bottom: 550px;
+    }
+
+    #image-slider img {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    
+    #event-section {
+        padding-top: 0px !important;
+    }
+
+    #event-section .container .card {
+        padding: 20px 20px;
+    }
+
+    #event-section .container .card .card-body .text {
+        width: 100% !important;
+    }
+
+    #event-section .container .card .card-body .text h1 {
+        font-size: 16px !important;
+    }
+
+    #event-section .container .card .card-body .text p {
+        font-size: 10px !important;
+    }
+
+    #event-section .container .card .text .btn-group button {
+        font-size: 8px;
+    }
+
+    /* category-section */
+    #category-section {
+        margin-top: -400px !important;
+    }
+
+    #category-section .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .title p br {
+        display: none;
+    }
+
+    #category-section .nav-category {
+        margin-left: 6px;
+    }
+
+    #category-section .col-lg-3 .card {
+        margin-top: 10px;
+        height: 450px;
+        width: 390px;
+        background-position: center;
+        background-size: cover;
+        border: none;
+        padding: 40px 30px;
+        color: var(--color-white);
+        transition: all 0.3s ease;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        background-color: var(--color-background);
+    }
+
+    #category-section .section-tradisi-budaya .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .section-tradisi-budaya .title h1 br {
+        display: none;
+    }
+
+    #category-section .section-tradisi-budaya .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .section-tradisi-budaya .nav-link {
+        filter: blur(2px);
+    }
+
+    #category-section .section-tradisi-budaya .nav-link.active {
+        filter: blur(0px);
+    }
+    
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .col-text {
+        text-align: left !important;
+        padding: 20px 10px;
+    }
+
+    #category-section .title-2 {
+        margin-top: 80px;
+    }
+
+    #category-section .title-2 h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title-2 p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .container-slider {
+        width: 370px;
+        margin-left: -14px;
+    }
+
+    footer 
+    
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 575px) {
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    /* navbar */
+    section {
+        overflow: hidden;
+    }
+
+    /* hero section */
+    #hero-section {
+        margin-bottom: 250px;
+    }
+
+    #hero-section h1 br {
+        display: none;
+    }
+
+    #hero-section h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #hero-section p br {
+        display: none;
+    }
+
+    #hero-section p {
+        font-size: 15px !important;
+        font-weight: 400;
+    }
+
+    #hero-section .button-wrapper .button-1 button {
+        font-size: 12px !important;
+        padding: 12px 52px 12px 12px !important;
+    }
+
+    #hero-section .button-wrapper .button-2 button {
+        font-size: 12px !important;
+        padding: 12px 32px 12px 32px !important;
+    }
+
+    /* image-slider-section */
+    #image-slider {
+        margin-bottom: 550px;
+    }
+
+    #image-slider img {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    #event-section {
+        padding-top: 0px !important;
+    }
+
+    #event-section .container .card {
+        padding: 20px 20px;
+    }
+
+    #event-section .container .card .card-body .text {
+        width: 100% !important;
+    }
+
+    #event-section .container .card .card-body .text h1 {
+        font-size: 18px !important;
+    }
+
+    #event-section .container .card .card-body .text p {
+        font-size: 12px !important;
+    }
+
+    #event-section .container .card .text .btn-group button {
+        font-size: 10px;
+    }
+
+    /* category-section */
+    #category-section {
+        margin-top: -400px !important;
+    }
+
+    #category-section .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .title p br {
+        display: none;
+    }
+
+    #category-section .nav-category {
+        margin-left: 6px;
+    }
+
+    #category-section .col-lg-3 .card {
+        margin-top: 10px;
+        height: 400px;
+        width: 248px;
+        background-position: center;
+        background-size: cover;
+        border: none;
+        padding: 40px 30px;
+        color: var(--color-white);
+        transition: all 0.3s ease;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        background-color: var(--color-background);
+    }
+
+    #category-section .section-tradisi-budaya .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .section-tradisi-budaya .title h1 br {
+        display: none;
+    }
+
+    #category-section .section-tradisi-budaya .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .section-tradisi-budaya .select-image {
+        display: flex;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item {
+        width: 48%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link {
+        background: transparent;
+        color: var(--color-black);
+        border: 1px solid var(--color-border);
+        padding: 20px 20px 10px 10px;
+        display: flex;
+        width: 250px;
+        filter: blur(2px);
+        opacity: 0.8;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link.active {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .col-text {
+        text-align: left !important;
+        padding: 20px 10px;
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .row {
+        margin: 0 !important;
+    }
+
+    #category-section .title-2 {
+        margin-top: 80px;
+    }
+
+    #category-section .title-2 h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title-2 p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .container-slider {
+        width: 564px;
+        margin: 0;
+        margin-left: -20px;
+
+    }
+
+    footer 
+    
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    /* navbar */
+    section {
+        overflow: hidden;
+    }
+
+    /* hero section */
+    #hero-section {
+        margin-bottom: 250px;
+    }
+
+    #hero-section h1 br {
+        display: none;
+    }
+
+    #hero-section h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #hero-section p br {
+        display: none;
+    }
+
+    #hero-section p {
+        font-size: 15px !important;
+        font-weight: 400;
+    }
+
+    #hero-section .button-wrapper .button-1 button {
+        font-size: 12px !important;
+        padding: 12px 52px 12px 12px !important;
+    }
+
+    #hero-section .button-wrapper .button-2 button {
+        font-size: 12px !important;
+        padding: 12px 32px 12px 32px !important;
+    }
+
+    /* image-slider-section */
+    #image-slider {
+        margin-bottom: 550px;
+    }
+
+    #image-slider img {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    #event-section .container .card .card-body .text {
+        width: 100% !important;
+    }
+
+    
+    #event-section {
+        padding-top: 0px !important;
+    }
+
+
+    #event-section .container .card .card-body .text h1 {
+        font-size: 20px !important;
+    }
+
+    #event-section .container .card .card-body .text p {
+        font-size: 14px !important;
+    }
+
+    #event-section .container .card .text .btn-group button {
+        font-size: 12px;
+    }
+
+    /* category-section */
+    #category-section {
+        margin-top: -400px !important;
+    }
+
+    #category-section .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .title p br {
+        display: none;
+    }
+
+    #category-section .nav-category {
+        margin-left: 6px;
+    }
+
+    #category-section .col-lg-3 .card {
+        margin-left: -32px;
+        margin-top: 10px;
+        height: 400px;
+        width: 560px;
+        background-position: center;
+        background-size: cover;
+        border: none;
+        padding: 40px 30px;
+        color: var(--color-white);
+        transition: all 0.3s ease;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        background-color: var(--color-background);
+    }
+
+    #category-section .section-tradisi-budaya .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .section-tradisi-budaya .title h1 br {
+        display: none;
+    }
+
+    #category-section .section-tradisi-budaya .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link {
+        background: transparent;
+        color: var(--color-black);
+        border: 1px solid var(--color-border);
+        padding: 20px 20px 10px 10px;
+        display: flex;
+        filter: blur(2px);
+        opacity: 0.8;
+        width: 100%;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link.active {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .col-text {
+        text-align: left !important;
+        padding: 20px 10px;
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .row {
+        margin: 0 !important;
+    }
+
+    #category-section .title-2 {
+        margin-top: 80px;
+    }
+
+    #category-section .title-2 h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title-2 p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .container-slider {
+        width: 550px;
+        margin: 0;
+        margin-left: -24px;
+
+    }
+
+    footer 
+    
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    section {
+        overflow: hidden;
+    }
+
+    /* hero section */
+    #hero-section {
+        margin-bottom: 250px;
+    }
+
+    #hero-section h1 br {
+        display: none;
+    }
+
+    #hero-section h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #hero-section p br {
+        display: none;
+    }
+
+    #hero-section p {
+        font-size: 15px !important;
+        font-weight: 400;
+    }
+
+    #hero-section .button-wrapper .button-1 button {
+        font-size: 12px !important;
+        padding: 12px 52px 12px 12px !important;
+    }
+
+    #hero-section .button-wrapper .button-2 button {
+        font-size: 12px !important;
+        padding: 12px 32px 12px 32px !important;
+    }
+
+    /* image-slider-section */
+    #image-slider {
+        margin-bottom: 550px;
+    }
+
+    #image-slider img {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+
+    #event-section .container .card .card-body .text {
+        width: 100% !important;
+    }
+
+    /* category-section */
+    #category-section {
+        margin-top: -400px !important;
+    }
+
+    #category-section .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .title p br {
+        display: none;
+    }
+
+    #category-section .nav-category {
+        margin-left: 6px;
+    }
+
+    #category-section .col-lg-3 .card {
+        margin-left: -42px;
+        margin-top: 10px;
+        height: 400px;
+        width: 760px;
+        background-position: center;
+        background-size: cover;
+        border: none;
+        padding: 100px 80px;
+        color: var(--color-white);
+        transition: all 0.3s ease;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        background-color: var(--color-background);
+    }
+
+    #category-section .section-tradisi-budaya .title h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .section-tradisi-budaya .title h1 br {
+        display: none;
+    }
+
+    #category-section .section-tradisi-budaya .title p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link {
+        background: transparent;
+        color: var(--color-black);
+        border: 1px solid var(--color-border);
+        padding: 20px 20px 10px 10px;
+        display: flex;
+        filter: blur(2px);
+        opacity: 0.8;
+        width: 100%;
+    }
+
+    #category-section .section-tradisi-budaya .select-image .nav-item .nav-link.active {
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .col-text {
+        text-align: left !important;
+        padding: 20px 10px;
+    }
+
+    #category-section .section-tradisi-budaya .tab-content .tab-pane .row {
+        margin: 0 !important;
+    }
+
+    #category-section .title-2 {
+        margin-top: 80px;
+    }
+
+    #category-section .title-2 h1 {
+        color: var(--color-title);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px hsla(0, 0%, 100%, 1);
+        font-size: 44px !important;
+        font-weight: 800 !important;
+    }
+
+    #category-section .title-2 p {
+        font-weight: 400;
+        color: var(--color-paragraph);
+        font-size: 15px !important;
+    }
+
+    #category-section .container-slider {
+        width: 850px;
+        margin: 0;
+        margin-left: -24px;
+
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}

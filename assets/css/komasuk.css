@@ -224,6 +224,15 @@ footer .container .copyright p .link-underline {
 
 
 @media screen and (min-width:0px) and (max-width:575px) {
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: end;
+        align-items: center;
+    }
+
     #content-kontak-masuk {
         height: max-content;
         padding: 100px 0;
@@ -257,5 +266,80 @@ footer .container .copyright p .link-underline {
     #jelajah-section {
         padding: 0;
         padding-bottom: 100px !important;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: end;
+        align-items: center;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: end;
+        align-items: center;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+    
+
+}
+
+@media screen and (min-width: 992px){
+    #jelajah-section .container .card .card-body .text {
+        width: 50% !important;
     }
 }

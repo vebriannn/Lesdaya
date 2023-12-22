@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Galeri - Lesdaya</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet"  href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet"  href="vendor/OwlCarousel/dist/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="assets/css/galeri.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <!-- navbar lesdaya -->
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="#">Lesdaya</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Galeri</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="artikel.html">Artikel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="diskusi.html">Diskusi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="komasuk.html">Kotak Masukan</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-link">
+                                <a class="nav-link" href="signin.html">Sign In</a>
+                            </li>
+                            <li class="nav-link">
+                                <div class="signup">
+                                    <a class="nav-link" href="signup.html">Sign Up</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- hero section -->
+        <section class="hero-section" id="hero-section">
+            <div class="container text-center" id="hero-container">
+                <h1 class="title mb-md-4">Lintasi <span>Batas </span>Jelajahi<br> Kekayaan Budaya yang <span>Abadi</span></h1>
+                <p class="subtitle">Ayo Telusuri Keunikan Budaya dari Jogjakarta! Jelajahi di <br>Setiap Kategorinya</p>
+                <div class="button-wrapper d-flex justify-content-center align-items-center text-center">
+                    <div class="button-1 d-flex">
+                        <button>Pilih Kategori</button>
+                        <div class="icon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="button-2 d-flex">
+                        <button>Lihat Jadwal Acara</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- image-slider section -->
+        <section class="image-slider" id="image-slider">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logos">
+                        <div class="logos-slide">
+                            <img src="/assets/images/galeri/galeri-image-slider (1).png" alt="">
+                            <img src="/assets/images/galeri/galeri-image-slider (2).png" alt="">
+                            <img src="/assets/images/galeri/galeri-image-slider (3).png" alt="">
+                            <img src="/assets/images/galeri/galeri-image-slider (4).png" alt="">
+                            <img src="/assets/images/galeri/galeri-image-slider (5).png" alt="">
+                            <img src="/assets/images/galeri/galeri-image-slider (6).png" alt="">
+                        </div>
+                        <div class="logos-slide">
+                            <img src="/assets/images/galeri/galeri-image-slider (1).png" alt="">
+                            <img src="/assets/images/galeri/galeri-image-slider (2).png" alt="">
+                            <img src="/assets/images/galeri/galeri-image-slider (3).png" alt="">
+                            <img src="/assets/images/galeri/galeri-image-slider (4).png" alt="">
+                            <img src="/assets/images/galeri/galeri-image-slider (5).png" alt="">
+                            <img src="/assets/images/galeri/galeri-image-slider (6).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section" id="category-section">
+            <div class="container" id="category-container">
+                <div class="title">
+                    <h1>Pilih <span>kategori</span> yang sesuai</h1>
+                    <p>Kami menyediakan berbagai kategori sesuai dengan<br> keanekaragaman yang ada, pilih dan jelajahi semua</p>
+                </div>
+                <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+                    <li class="nav-item nav-item1">
+                        <button class="nav-link">Tradisi & Budaya</button>
+                    </li>
+                    <li class="nav-item nav-item1">
+                        <button class="nav-link">Tempat Bersejarah</button>
+                    </li>
+                    <li class="nav-item nav-item1">
+                        <button class="nav-link">Busana & Kain</button>
+                    </li>
+                    <li class="nav-item nav-item1">
+                        <button class="nav-link">Kuliner</button>
+                    </li>
+                </ul>
+                <div class="content">
+                    <div class="row">
+                        <ul class="nav nav-tabs nav-category mt-5" id="myTab" role="tablist" style="border: none;">
+                            <div class="col-lg-3 col-sm-12">
+                                <li class="nav-item nav-item2" role="presentation">
+                                    <button class="nav-link active" id="place1-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                                        <div class="card" style="background-image: url(/assets/images/galeri/galeri-group\ \(3\).png);">
+                                            <div class="text">
+                                                <p>Kategori</p>
+                                                <h2>Tradisi & Budaya</h2>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                            </div>
+                            <div class="col-lg-3 col-sm-12">
+                                <li class="nav-item nav-item2" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                                        <div class="card" style="background-image: url(/assets/images/galeri/galeri-group\ \(4\).png);">
+                                            <div class="text">
+                                                <p>Kategori</p>
+                                                <h2>Tempat Bersejarah</h2>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                            </div>
+                            <div class="col-lg-3 col-sm-12">
+                                <li class="nav-item nav-item2" role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                                        <div class="card" style="background-image: url(/assets/images/galeri/galeri-group\ \(1\).png);">
+                                            <div class="text">
+                                                <p>Kategori</p>
+                                                <h2>Busana & Kain</h2>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                            </div>
+                            <div class="col-lg-3 col-sm-12">
+                                <li class="nav-item nav-item2" role="presentation">
+                                    <button class="nav-link" id="kuliner-tab" data-bs-toggle="tab" data-bs-target="#kuliner-tab-pane" type="button" role="tab" aria-controls="kuliner-tab-pane" aria-selected="false">
+                                        <div class="card" style="background-image: url(/assets/images/galeri/galeri-group\ \(2\).png);">
+                                            <div class="text">
+                                                <p>Kategori</p>
+                                                <h2>Kuliner Hits Yogyakarta</h2>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <section class="konten section-tradisi-budaya">
+                            <div class="container">
+                                <div class="title">
+                                    <h1>Ayo <span>Jelajahi</span> Budaya Jogja!</h1>
+                                    <p>Berikut merupakan budaya budaya dan tradisi yang ada di<br> Wilayah Yogyakarta</p>
+                                </div>
+                                <ul class="nav nav-pills select-image mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active d-flex" style="" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-image-circle (3).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Tumplak Wajik</h4>
+                                                <p>Tradisi Masyarakat</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-image-circle (2).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Saparan</h4>
+                                                <p>Tradisi Masyarakat</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-image-circle (4).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Sekaten</h4>
+                                                <p>Tradisi Masyarakat</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-image-circle (1).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Parangkusumo</h4>
+                                                <p>Tradisi Masyarakat</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-12 col-image" style="background-image: url(/assets/images/galeri/galeri-tradisi\ \(2\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-sm-12 col-text">
+                                                <div class="info">
+                                                    <h4>Tradisi Tumplak Wajik</h4>
+                                                    <p>Tumplak Wajik merupakan upacara yang menandai dimulainya proses merangkai gunungan atau simbol sedekah raja kepada rakyat. Nantinya, gunungan tersebut akan dibagikan kepada warga pada upacara Garebeg.</p>
+                                                </div>
+                                                <div class="info mt-5">
+                                                    <h4>Pelaksanaan </h4>
+                                                    <p>Tumplak Wajik dilakukan di halaman Magangan Kraton Yogyakarta pada pukul 04.00 sore, dua hari sebelum perayaan Garebeg.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/galeri-tradisi\ \(4\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Tradisi Saparan</h4>
+                                                    <p>Saparan atau biasa disebut dengan istilah bekakak adalah tradisi Jawa yang dilaksanakan untuk mengenang jasa seorang abdi dalem kesayangan Sri Sultan Hamengkubuwono I, yakni Ki Wirosuto yang konon katanya hilang secara misterius saat mencari batu gamping di Gunung Gamping bersama dengan istrinya.</p>
+                                                </div>
+                                                <div class="info mt-5">
+                                                    <h4>Pelaksanaan </h4>
+                                                    <p>Upacara ini dilaksanakan pada bulan Safar dalam kalender Jawa.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/galeri-tradisi\ \(1\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Tradisi Sekaten</h4>
+                                                    <p>Sekaten merupakan rangkaian kegiatan tahunan yang umumnya diadakan oleh umat Islam sebagai peringatan hari kelahiran Nabi Muhammad SAW. Tradisi ini sudah berlangsung sejak lama, yakni sejak masa pemerintahan Kerajaan Demak.</p>
+                                                </div>
+                                                <div class="info mt-5">
+                                                    <h4>Pelaksanaan </h4>
+                                                    <p>Acara ini akan berlangsung pada tanggal 5 hingga 12 Rabiul Awal, yang mana pada tanggal ini gamelan akan ditabuh atau dibunyikan secara terus menerus.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/galeri-tradisi\ \(3\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Tradisi Labuhan Parangkusumo</h4>
+                                                    <p>Merupakan salah satu upacara adat yang dilakukan untuk memohonkan doa keselamatan dan membuang segala macam sifat buruk. Upacara Labuhan Parangkusumo sering diidentikkan dengan legenda Ratu Pantai Selatan dan Panembahan Senopati.</p>
+                                                </div>
+                                                <div class="info mt-5">
+                                                    <h4>Pelaksanaan </h4>
+                                                    <p>setiap tanggal 30 bulan Rajab dalam kalender Jawa tersebut untuk memperingati bertahtanya Sri Sultan HBX.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title title-2">
+                                    <h1><span>Galeri </span> Budaya Kita</h1>
+                                    <p>Galeri Budaya merupakan tempat kami untuk dapat membagikan<br> keindahan dari keanekaragaman budaya yang ada</p>
+                                </div>
+                                <div class="container container-slider">
+                                    <div class="slider-wrapper">
+                                        <button id="prev-slide" class="slide-button material-symbols-rounded">
+                                            <
+                                        </button>
+                                        <ul class="image-list">
+                                        <img class="image-item" src="assets/images/galeri/galeri-tradisi (1).png" alt="img-1" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tradisi (2).png" alt="img-2" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tradisi (3).png" alt="img-3" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tradisi (4).png" alt="img-4" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tradisi (5).png" alt="img-5" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tradisi (6).png" alt="img-6" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tradisi (7).png" alt="img-7" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tradisi (8).png" alt="img-8" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tradisi (9).png" alt="img-9" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tradisi (10).png" alt="img-10" />
+                                        </ul>
+                                        <button id="next-slide" class="slide-button material-symbols-rounded">
+                                            >
+                                        </button>
+                                    </div>
+                                    <div class="slider-scrollbar" id="slider-scrollbar">
+                                        <div class="scrollbar-track">
+                                            <div class="scrollbar-thumb" id="scrollbar-thumb"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <section class="konten section-tradisi-budaya">
+                            <div class="container">
+                                <div class="title">
+                                    <h1>Ayo <span>Jelajahi</span> Tempat Bersejarah Jogja!</h1>
+                                    <p>Berikut merupakan tempat-tempat yang memiliki banyak sejarah<br> yang ada di Wilayah Yogyakarta</p>
+                                </div>
+                                <ul class="nav nav-pills select-image mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active d-flex" id="pills-place1-tab" data-bs-toggle="pill" data-bs-target="#pills-place1" type="button" role="tab" aria-controls="pills-place1" aria-selected="true">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-circle-image-place (1).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Kraton Yogyakarta</h4>
+                                                <p>Tempat Bersejarah</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-place2-tab" data-bs-toggle="pill" data-bs-target="#pills-place2" type="button" role="tab" aria-controls="pills-place2" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-circle-image-place (4).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Taman Sari Keraton</h4>
+                                                <p>Tempat Bersejarah</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-place3-tab" data-bs-toggle="pill" data-bs-target="#pills-place3" type="button" role="tab" aria-controls="pills-place3" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-circle-image-place (3).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>M. Benteng Vredeburg</h4>
+                                                <p>Tempat Bersejarah</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-place4-tab" data-bs-toggle="pill" data-bs-target="#pills-place4" type="button" role="tab" aria-controls="pills-place4" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-circle-image-place (2).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Monumen Yogya</h4>
+                                                <p>Tempat Bersejarah</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-place1" role="tabpanel" aria-labelledby="pills-place1-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/image-slider-place\ \(1\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Kraton Yogyakarta</h4>
+                                                    <p>Tidak hanya melihat bangunan bersejarah saja, kamu juga bisa menyaksikan berbagai pertunjukkan atau upacara adat yang masih sering dilakukan oleh pihak keraton. Jika masuk ke dalam, kamu juga akan menemukan barang-barang pusaka peninggalan zaman dulu.</p>
+                                                </div>
+                                                <div class="info mt-5">
+                                                    <h4>Keterangan : </h4>
+                                                    <p>Lokasi: Jl. Rotowijayan Blok No. 1, Panembahan, Kecamatan Kraton, Kota Yogyakarta Buka: Setiap hari (08.30 WIB – 14.00 WIB) Harga tiket masuk: mulai dari Rp5.000 – Rp15.000 per orang.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-place2" role="tabpanel" aria-labelledby="pills-place2-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/image-slider-place\ \(4\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Taman Sari Keraton Yogyan</h4>
+                                                    <p>Dulunya, bangunan ini memiliki luas awal 10 hektar dengan 57 bangunan, yang terdiri dari kompleks kolam pemandian, pulau buatan, danau buatan, jembatan gantung, taman, lorong bawah tanah, kanal air, serta beberapa gedung dengan beragam arsitektur.</p>
+                                                </div>
+                                                <div class="info mt-5">
+                                                    <h4>Keterangan : </h4>
+                                                    <p>Lokasi: Patehan, Kecamatan Kraton, Kota Yogyakarta
+                                                        Buka: Setiap hari (09.00 WIB – 15.00 WIB)
+                                                        Harga tiket masuk: Rp5.000 per orang.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-place3" role="tabpanel" aria-labelledby="pills-place3-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/image-slider-place\ \(3\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Museum Benteng Vredeburg</h4>
+                                                    <p>Di dalam museum ini, kamu akan menemukan sejumlah koleksi, seperti diorama yang menceritakan perjuangan rakyat pra-proklamasi, bangunan-bangunan peninggalan Belanda, serta benda-benda bersejarah lainnya yang sangat khas dengan budaya masa lalu.</p>
+                                                </div>
+                                                <div class="info mt-5">
+                                                    <h4>Keterangan : </h4>
+                                                    <p>Lokasi: Jl. Margo Mulyo No.6, Ngupasan, Kec. Gondomanan, Kota Yogyakarta
+                                                        Buka: Setiap hari Selasa – Minggu (08.00 WIB – 15.00 WIB)
+                                                        Harga tiket masuk: Rp2.000 (anak), Rp3.000 (dewasa), dan Rp10.000 (turis asing)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-place4" role="tabpanel" aria-labelledby="pills-place4-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/image-slider-place\ \(2\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Monumen Yogyakarta</h4>
+                                                    <p>Monumen Yogya Kembali merupakan sebuah museum yang memiliki arsitektur bangunan unik. Museum di tepi jalan Ring Road Utara ini memiliki bentuk layaknya gunung, yang mana bentuk itu melambangkan kesuburan dan pelestarian sejarah nenek moyang.</p>
+                                                </div>
+                                                <div class="info mt-5">
+                                                    <h4>Keterangan : </h4>
+                                                    <p>Lokasi: Jl. Ring Road Utara, Jongkang, Sariharjo, Ngaglik, Kabupaten Sleman
+                                                        Buka: Setiap hari Selasa – Minggu pukul 08.00 – 16.00 WIB.
+                                                        Harga tiket masuk: mulai dari Rp10.000 – Rp15.000 per orang.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title title-2">
+                                    <h1><span>Galeri </span> Budaya Kita</h1>
+                                    <p>Galeri Budaya merupakan tempat kami untuk dapat membagikan<br> keindahan dari keanekaragaman budaya yang ada</p>
+                                </div>
+                                <div class="container container-slider">
+                                    <div class="slider-wrapper">
+                                        <button id="prev-slide2" class="slide-button material-symbols-rounded">
+                                            <
+                                        </button>
+                                        <ul class="image-list">
+                                        <img class="image-item" src="assets/images/galeri/galeri-tempat-bersejarah (1).png" alt="img-1" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tempat-bersejarah (2).png" alt="img-2" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tempat-bersejarah (3).png" alt="img-3" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tempat-bersejarah (4).png" alt="img-4" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tempat-bersejarah (5).png" alt="img-5" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tempat-bersejarah (6).png" alt="img-6" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tempat-bersejarah (7).png" alt="img-7" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tempat-bersejarah (8).png" alt="img-8" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tempat-bersejarah (9).png" alt="img-9" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-tempat-bersejarah (10).png" alt="img-10" />
+                                        </ul>
+                                        <button id="next-slide2" class="slide-button material-symbols-rounded">
+                                            >
+                                        </button>
+                                    </div>
+                                    <div class="slider-scrollbar" id="slider-scrollbar2">
+                                        <div class="scrollbar-track">
+                                            <div class="scrollbar-thumb" id="scrollbar-thumb2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <section class="konten section-tradisi-budaya">
+                            <div class="container">
+                                <div class="title">
+                                    <h1>Ayo <span>Jelajahi</span> Busana & Kain di Jogja!</h1>
+                                    <p>Berikut merupakan busana yang dimiliki oleh budaya <br> Wilayah Yogyakarta</p>
+                                </div>
+                                <ul class="nav nav-pills select-image mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active d-flex" id="pills-busana1-tab" data-bs-toggle="pill" data-bs-target="#pills-busana1" type="button" role="tab" aria-controls="pills-busana1" aria-selected="true">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-circle-image-busana (4).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Blangkon</h4>
+                                                <p>Busana & Kain</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-busana2-tab" data-bs-toggle="pill" data-bs-target="#pills-busana2" type="button" role="tab" aria-controls="pills-busana2" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-circle-image-busana (3).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Batik Yogyakarta</h4>
+                                                <p>Busana & Kain</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-busana3-tab" data-bs-toggle="pill" data-bs-target="#pills-busana3" type="button" role="tab" aria-controls="pills-busana3" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-circle-image-busana (2).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Janggan Hitam</h4>
+                                                <p>Busana & Kain</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-busana4-tab" data-bs-toggle="pill" data-bs-target="#pills-busana4" type="button" role="tab" aria-controls="pills-busana4" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-circle-image-busana (1).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Busana Pranakan</h4>
+                                                <p>Busana & Kain</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-busana1" role="tabpanel" aria-labelledby="pills-busana1-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/galeri-image-slider-busana\ \(3\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Blangkon</h4>
+                                                    <p>Ada beberapa perbedaan blangkon Yogyakarta dan Solo, salah satunya pada bagian belakang atau mondolan blangkon.
+                                                        Mondolan blangkon Solo berbentuk datar, sementara blangkon Yogyakarta berbentuk monjol.Selain itu, blangkon Solo terbuat dari kain batik berwarna kecoklatan, sedangkan blangkon Jogja dibuat dengan kain batik yang warnanya senderung putih.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-busana2" role="tabpanel" aria-labelledby="pills-busana2-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri//galeri-image-slider-busana\ \(2\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Batik Yogyakarta</h4>
+                                                    <p>Motif batik Yogyakarta memiliki ciri khas, yaitu banyak bidang putih bersih dan motif geometrisnya dibuat besar-besar.
+                                                        Jauh lebih besar dibandingkan motif geometris batik Surakarta.
+                                                        Selain itu, berlatar belakang putih, hitam, cokelat dan abu-abu.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-busana3" role="tabpanel" aria-labelledby="pills-busana3-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/galeri-image-slider-busana\ \(1\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Janggan Hitam</h4>
+                                                    <p>Janggan hitam dipakai oleh Abdi Dalem estri (perempuan) dalam menjalankan tugas di Kraton Yogyakarta.
+                                                        Janggan merupakan baju dengan model menyerupai surjan yang dilengkapi kancing hingga menutup leher. Warna kain yang digunakan harus hitam. Janggan sendiri berasal dari kata 'jangga' berarti leher, yang melukiskan keindahan dan kesucian kaum perempuan keraton, dan perempuan Jawa pada umumnya.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-busana4" role="tabpanel" aria-labelledby="pills-busana4-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/galeri-image-slider-busana\ \(4\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Busana Pranakan</h4>
+                                                    <p>Busana pranakan adalah pakaian dinas harian yang dikenakan para Abdi Dalem jaler atau pria. Mengutip Kraton Jogja, busana ini konon terinspirasi dari baju kurung yang dikenakan para santri putri di Banten ketika Sultan berkunjung ke sana pada abad ke-19.
+                                                        Bahan yang digunakan untuk membuat baju pranakan berupa kain lurik berwarna biru tua dan hitam. Kemudian, dikombinasi corak garis berjumlah 3-4 atau disebut telupat (telu-papat).</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title title-2">
+                                    <h1><span>Galeri </span> Budaya Kita</h1>
+                                    <p>Galeri Budaya merupakan tempat kami untuk dapat membagikan<br> keindahan dari keanekaragaman budaya yang ada</p>
+                                </div>
+                                <div class="container container-slider">
+                                    <div class="slider-wrapper">
+                                        <button id="prev-slide3" class="slide-button material-symbols-rounded">
+                                            <
+                                        </button>
+                                        <ul class="image-list">
+                                        <img class="image-item" src="assets/images/galeri/galeri-busana (1).png" alt="img-1" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-busana (2).png" alt="img-2" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-busana (3).png" alt="img-3" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-busana (4).png" alt="img-4" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-busana (5).png" alt="img-5" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-busana (6).png" alt="img-6" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-busana (7).png" alt="img-7" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-busana (8).png" alt="img-8" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-busana (9).png" alt="img-9" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-busana (10).pngg" alt="img-10" />
+                                        </ul>
+                                        <button id="next-slide3" class="slide-button material-symbols-rounded">
+                                            >
+                                        </button>
+                                    </div>
+                                    <div class="slider-scrollbar" id="slider-scrollbar3">
+                                        <div class="scrollbar-track">
+                                            <div class="scrollbar-thumb" id="scrollbar-thumb3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="kuliner-tab-pane" role="tabpanel" aria-labelledby="kuliner-tab" tabindex="0">
+                        <section class="konten section-tradisi-budaya">
+                            <div class="container">
+                                <div class="title">
+                                    <h1>Ayo <span>Jelajahi</span> Kuliner di Jogja!</h1>
+                                    <p>Berikut merupakan kuliner menarik dan wajib  <br>untuk anda coba di Wilayah Yogyakarta</p>
+                                </div>
+                                <ul class="nav nav-pills select-image mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active d-flex" id="pills-kuliner1-tab" data-bs-toggle="pill" data-bs-target="#pills-kuliner1" type="button" role="tab" aria-controls="pills-kuliner1" aria-selected="true">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-image-circle-kuliner (1).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Gudeg Yogyakarta</h4>
+                                                <p>Kuliner</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-kuliner2-tab" data-bs-toggle="pill" data-bs-target="#pills-kuliner2" type="button" role="tab" aria-controls="pills-kuliner2" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-image-circle-kuliner (4).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Sate Klathak</h4>
+                                                <p>Kuliner</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-kuliner3-tab" data-bs-toggle="pill" data-bs-target="#pills-kuliner3" type="button" role="tab" aria-controls="pills-kuliner3" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-image-circle-kuliner (3).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Berongkos</h4>
+                                                <p>Kuliner</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-kuliner4-tab" data-bs-toggle="pill" data-bs-target="#pills-kuliner4" type="button" role="tab" aria-controls="pills-kuliner4" aria-selected="false">
+                                            <div class="images">
+                                                <img src="/assets/images/galeri/galeri-image-circle-kuliner (2).png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h4>Gatot & Tiwul</h4>
+                                                <p>Kuliner</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-kuliner1" role="tabpanel" aria-labelledby="pills-kuliner1-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/galeri-image-slider-kuliner\ \(3\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Gudeg Yogya</h4>
+                                                    <p>Makanan yang menjadi ikon utama Daerah Istimewa Yogyakarta adalah gudeg. Nama"gudeg"didapat dari istilah bahasa Jawa hangudek. Istilah hangudek memiliki arti 'proses mengaduk'. Sebagai makanan khas Yogyakarta, gudeg merupakan salah satu olahan yang banyak dipilih untuk dijadikan oleh-oleh. Seiring dengan perkembangan zaman, pengemasan gudeg juga semakin beragam.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-kuliner2" role="tabpanel" aria-labelledby="pills-kuliner2-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri//galeri-image-slider-kuliner\ \(1\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Sate Klathak</h4>
+                                                    <p>Sate klathak adalah sate yang berbahan dasar daging kambing muda. Bagian uniknya adalah tusuk satai yang digunakan tidak terbuat dari bambu, tetapi dari besi jeruji sepeda. Penggunaan jeruji besi ini dimaksudkan agar daging kambing muda lebih cepat matang karena panasnya yang merata. Satai (atau disebut sate oleh masyarakat Jawa) adalah salah satu makanan khas Indonesia yang masuk dalam daftar makanan terlezat di dunia.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-kuliner3" role="tabpanel" aria-labelledby="pills-kuliner3-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/galeri-image-slider-kuliner\ \(2\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Berongkos</h4>
+                                                    <p>Berongkos (atau disebut brongkos oleh masyarakat Jawa) merupakan salah satu olahan sayur yang terbuat dari daging sapi, terutama bagian sandung lamur (bagian daging sapi yang berasal dari bagian dada bawah, sekitar ketiak). Ciri khas dari masakan ini adalah penggunaan keluak sebagai bumbu sehingga sayur berwarna gelap dan beraroma khas.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-kuliner4" role="tabpanel" aria-labelledby="pills-kuliner4-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-image" style="background-image: url(/assets/images/galeri/galeri-image-slider-kuliner\ \(4\).png);">
+                                                
+                                            </div>
+                                            <div class="col-lg-6 col-text">
+                                                <div class="info">
+                                                    <h4>Gatot & Tiwul</h4>
+                                                    <p>Gatot dan tiwul adalah makanan yang terbuat dari ketela pohon (singkong). Gatot dan tiwul merupakan salah satu makanan yang bermanfaat untuk pencernaan perut. Makanan ini diolah melalui proses fermentasi. Saat proses fermentasi singkong, bakteri asam laktat (laktobasilus) tumbuh dan berkembang biak. Singkong yang telah diproses fermentasi kemudian dijemur di bawah sinar matahari menjadi gaplek.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title title-2">
+                                    <h1><span>Galeri </span> Budaya Kita</h1>
+                                    <p>Galeri Budaya merupakan tempat kami untuk dapat membagikan<br> keindahan dari keanekaragaman budaya yang ada</p>
+                                </div>
+                                <div class="container container-slider">
+                                    <div class="slider-wrapper">
+                                        <button id="prev-slide4" class="slide-button material-symbols-rounded">
+                                            <
+                                        </button>
+                                        <ul class="image-list">
+                                        <img class="image-item" src="assets/images/galeri/galeri-kuliner (1).png" alt="img-1" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-kuliner (2).png" alt="img-2" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-kuliner (3).png" alt="img-3" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-kuliner (4).png" alt="img-4" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-kuliner (5).png" alt="img-5" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-kuliner (6).png" alt="img-6" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-kuliner (7).png" alt="img-7" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-kuliner (8).png" alt="img-8" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-kuliner (9).png" alt="img-9" />
+                                        <img class="image-item" src="assets/images/galeri/galeri-kuliner (10).png" alt="img-10" />
+                                        </ul>
+                                        <button id="next-slide4" class="slide-button material-symbols-rounded">
+                                            >
+                                        </button>
+                                    </div>
+                                    <div class="slider-scrollbar" id="slider-scrollbar4">
+                                        <div class="scrollbar-track">
+                                            <div class="scrollbar-thumb" id="scrollbar-thumb4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+        </section>
+
+        <!-- event section -->
+        <section class="event-section" id="event-section">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body d-flex  align-items-center">
+                        <div class="text w-50">
+                            <h1 class="fs-3 text-white fw-bold">Dapatkan Informasi Jadwal Event di Wilayah Jogjakarta!</h1>
+                            <p class="text-white">Tekan Download untuk mendapatkan informasi yang lebih lengkap</p>
+                            <div class="btn-group gap-4 mt-2">
+                                <button class="btn btn-dd  px-4 px-md-5 pt-2 pb-2">Download  <iconify-icon icon="solar:arrow-right-outline"></iconify-icon></button>
+                                <button class="btn btn-view btn-light btn-lf px-4 px-md-5 pt-2 pb-2">Lihat File  </button>
+                            </div>
+                        </div>
+                        <div class="imges d-none d-lg-block">
+                            <img src="assets/images/beranda/imgEvent.png" alt="img event">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-sm-5 col-md-5 col-lg-4 text-group mb-5 mb-sm-0">
+                        <img src="assets/images/beranda/icon-circle.png" alt="icon circle">
+                        <p class="text-white pt-4 pb-4 m-0">Ayo Lestarikan Budaya Untuk Menjaga Kekayaan Kita! Budaya Adalah Asset yang Sangat Berharga Bagi Kita</p>
+                        <div class="social-media">
+                            <div class="row gap-sm-3 gap-3 ">
+                                <div class="col-1">
+                                    <img src="assets/images/beranda/Facebook.png" alt="fb img">
+                                </div>
+                                <div class="col-1">
+                                    <img src="assets/images/beranda/Twitter.png" alt="tr img">
+                                </div>
+                                <div class="col-1">
+                                    <img src="assets/images/beranda/Instagram.png" alt="ig img">
+                                </div>
+                                <div class="col-1">
+                                    <img src="assets/images/beranda/LinkedIn.png" alt="li img">
+                                </div>
+                                <div class="col-1">
+                                    <img src="assets/images/beranda/YouTube.png" alt="yt img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-3 col-md-3 col-lg-2 text-group">
+                        <h5 class="title text-white mb-4">Beranda</h5>
+                        <div class="link">
+                            <p>Highlight</p>
+                            <p>Jadwal Event</p>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-3 col-md-3 col-lg-2 text-group">
+                        <h5 class="title text-white mb-4">Galeri</h5>
+                        <div class="link">
+                            <p>Kategori</p>
+                            <p>Galeri Budaya</p>
+                            <p>Jadwal Event</p>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-5 col-md-5 col-lg-2 text-group mt-3 mt-sm-5 mt-lg-0">
+                        <h5 class="title text-white mb-4">Artikel</h5>
+                        <div class="link">
+                            <p>Berita Terkini</p>
+                            <p>Artikel Budaya</p>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-6 col-md-6 col-lg-2 text-group mt-3 mt-sm-5 mt-lg-0">
+                        <h5 class="title text-white mb-4">Diskusi & Kotak Masukan</h5>
+                        <div class="link">
+                            <p>Forum</p>
+                            <p>Beri Masukan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p class="text-center pt-3 pb-3 m-0">
+                        Copyright © 2023 Lesdaya Agency 
+                        <span class="garis">|</span>  
+                        All Rights Reserved 
+                        <span class="garis">|</span> 
+                        <span class="link-underline">Terms and Conditions</span> 
+                        <span class="garis">|</span>
+                        <span class="link-underline">Privacy Policy</span>
+                    </p> 
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="vendor/OwlCarousel/dist/owl.carousel.js"></script>
+        <script src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+        
+        <script>
+                const idHeader = document.querySelector('header');
+                const btnDownload = document.querySelector('.btn-dd')
+                const btnView = document.querySelector('.btn-view')
+                
+                if(window.innerWidth < 992) {
+                    idHeader.classList.add("actived-mobile");
+                }
+                else {
+                    idHeader.classList.remove("actived-mobile");
+                }
+
+                // navbar sticky
+                window.addEventListener('scroll', () => {
+                    
+                    // navbar sticky
+                    if(window.scrollY > 1) {
+                        idHeader.classList.add("scrol-actived");
+                    }
+                    else {
+                        idHeader.classList.remove("scrol-actived");
+                    }
+                })
+
+                btnView.addEventListener('click', () => {
+                    window.open('https://drive.google.com/file/d/1xhvw0moef_95ndcI4Mj3z4qnzIBIu5xY/view','_blank');
+                })
+
+                btnDownload.addEventListener('click', () => {
+                    window.open('https://drive.google.com/u/0/uc?id=1xhvw0moef_95ndcI4Mj3z4qnzIBIu5xY&export=download', '_blank')
+                })
+        </script>
+
+        <script>
+            const initSlider = () => {
+                const sliders = document.querySelectorAll(".container-slider");
+
+                sliders.forEach((slider, index) => {
+                    const imageList = slider.querySelector(".slider-wrapper .image-list");
+                    const slideButtons = slider.querySelectorAll(".slider-wrapper .slide-button");
+                    const sliderScrollbar = slider.querySelector(".slider-scrollbar");
+                    const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+                    const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+
+                    // Handle scrollbar thumb drag
+                    scrollbarThumb.addEventListener("mousedown", (e) => {
+                        const startX = e.clientX;
+                    const thumbPosition = scrollbarThumb.offsetLeft;
+                    const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+                    
+                    // Update thumb position on mouse move
+                    const handleMouseMove = (e) => {
+                        const deltaX = e.clientX - startX;
+                        const newThumbPosition = thumbPosition + deltaX;
+
+                        // Ensure the scrollbar thumb stays within bounds
+                        const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+                        const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+                        
+                        scrollbarThumb.style.left = `${boundedPosition}px`;
+                        imageList.scrollLeft = scrollPosition;
+                    }
+
+                    // Remove event listeners on mouse up
+                    const handleMouseUp = () => {
+                        document.removeEventListener("mousemove", handleMouseMove);
+                        document.removeEventListener("mouseup", handleMouseUp);
+                    }
+
+                    // Add event listeners for drag interaction
+                    document.addEventListener("mousemove", handleMouseMove);
+                    document.addEventListener("mouseup", handleMouseUp);
+                    });
+
+                    // Slide images according to the slide button clicks
+                    slideButtons.forEach(button => {
+                        button.addEventListener("click", () => {
+                            const direction = button.id.includes(`prev-slide${index + 1}`) ? -1 : 1;
+                            const scrollAmount = imageList.clientWidth * direction;
+                            imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+                        });
+                    });
+
+                    // Show or hide slide buttons based on scroll position
+                    const handleSlideButtons = () => {
+                        const prevButton = slider.querySelector(`#prev-slide${index + 1}`);
+                        const nextButton = slider.querySelector(`#next-slide${index + 1}`);
+                        prevButton.style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+                        nextButton.style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+                    };
+
+                    // Update scrollbar thumb position based on image scroll
+                    const updateScrollThumbPosition = () => {
+                        const scrollPosition = imageList.scrollLeft;
+                        const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+                        scrollbarThumb.style.left = `${thumbPosition}px`;
+                    };
+
+                    // Call these two functions when image list scrolls
+                    imageList.addEventListener("scroll", () => {
+                        updateScrollThumbPosition();
+                        handleSlideButtons();
+                    });
+
+                    // Initialize the slider
+                    handleSlideButtons();
+                    updateScrollThumbPosition();
+                });
+            };
+
+            // Call the initSlider function when the window is resized or the page is loaded
+            window.addEventListener("resize", initSlider);
+            window.addEventListener("load", initSlider);
+
+        </script>
+    </body>
+</html>

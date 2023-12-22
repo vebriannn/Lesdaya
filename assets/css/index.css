@@ -109,19 +109,19 @@ header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup:hov
 }
 
 
-#tentang-section .container .card-group .row .col-3:nth-child(1) .card {
+#tentang-section .container .card-group .row .card-section:nth-child(1) .card {
     margin-top: 2rem;
 }
 
-#tentang-section .container .card-group .row .col-3:nth-child(2) .card {
+#tentang-section .container .card-group .row .card-section:nth-child(2) .card {
     margin-top: 6rem;
 }
 
-#tentang-section .container .card-group .row .col-3:nth-child(3) .card {
+#tentang-section .container .card-group .row .card-section:nth-child(3) .card {
     margin-top: -2rem;
 }
 
-#tentang-section .container .card-group .row .col-3:nth-child(4) .card {
+#tentang-section .container .card-group .row .card-section:nth-child(4) .card {
     margin-top: 8rem;
     
 }
@@ -136,19 +136,19 @@ header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup:hov
     border-radius: 6px;
 }
 
-#tentang-section .container .card-group .row .col-3:nth-child(1) .card-tentang::before {
+#tentang-section .container .card-group .row .card-section:nth-child(1) .card-tentang::before {
     height: 70%;
 }
 
-#tentang-section .container .card-group .row .col-3:nth-child(2) .card-tentang::before {
+#tentang-section .container .card-group .row .card-section:nth-child(2) .card-tentang::before {
     height: 40%;
 }
 
-#tentang-section .container .card-group .row .col-3:nth-child(3) .card-tentang::before {
+#tentang-section .container .card-group .row .card-section:nth-child(3) .card-tentang::before {
     height: 90%;
 }
 
-#tentang-section .container .card-group .row .col-3:nth-child(4) .card-tentang::before {
+#tentang-section .container .card-group .row .card-section:nth-child(4) .card-tentang::before {
     height: 30%;
 }
 
@@ -213,16 +213,16 @@ header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup:hov
     z-index: 2;
 }
 
-#budaya .container-fluid .card-group .col-4:nth-child(1) .card .card-body .images-style .tag .tag-budaya {
+#budaya .container-fluid .card-group .card-items:nth-child(1) .card .card-body .images-style .tag .tag-budaya {
     bottom: 186px;
 }
 
-#budaya .container-fluid .card-group .col-4:nth-child(2) .card .card-body .images-style .tag .tag-budaya {
+#budaya .container-fluid .card-group .card-items:nth-child(2) .card .card-body .images-style .tag .tag-budaya {
     bottom: 158px;
 }
 
-#budaya .container-fluid .card-group .col-4:nth-child(3) .card .card-body .images-style .tag .tag-budaya {
-    bottom: 206px;
+#budaya .container-fluid .card-group .card-items:nth-child(3) .card .card-body .images-style .tag .tag-budaya {
+    bottom: 182px;
 }
 
 #budaya .container-fluid .card-group .card .card-body img {
@@ -467,7 +467,645 @@ footer .container .copyright p .link-underline {
     font-weight: 600 !important;
 }
 
-.scrol-actived {
+.scrol-actived,
+.actived-mobile {
     backdrop-filter: blur(10px); /* Sesuaikan nilai blur sesuai kebutuhan */
     background-color: rgba(255, 255, 255, 0.5); /* Sesuaikan warna dan opasitas sesuai kebutuhan */
+}
+
+
+/* media query */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #budaya .container-fluid .card-group .card-items:nth-child(1) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+    
+    #budaya .container-fluid .card-group .card-items:nth-child(2) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 158px;
+    }
+    
+    #budaya .container-fluid .card-group .card-items:nth-child(3) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 158px;
+    }
+
+    #tentang-section .container .card-group .row .card-section .card-tentang::before {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+
+     /* navbar */
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    #tentang-section {
+        height: max-content;
+        padding: 100px 0;
+    }
+
+    #hero-section .container .title {
+        font-size: 100px !important;
+    }
+
+    #tentang-section .container .card-group .row .card-section:nth-child(2) .card-tentang::before {
+        display: none;
+    }
+
+    #tentang-section .container .card-group .row .col-3 .card .card-body .deskripsi .card-title {
+        font-size: 16px;
+    }
+
+    #tentang-section .container .card-group .row .col-3 .card .card-body .deskripsi .card-text {
+        font-size: 14px;
+    }
+
+    #budaya .container-fluid .title-budaya .title {
+        font-size: 28px !important;
+    }
+
+    #budaya .container-fluid .title-budaya .title span img {
+        width: 34px;
+    }
+
+    #budaya .container-fluid .card-group .card-items:nth-child(1) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+    
+    #budaya .container-fluid .card-group .card-items:nth-child(2) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+    
+    #budaya .container-fluid .card-group .card-items:nth-child(3) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+
+    #tentang-section .container .card-group .row .card-section .card-tentang::before {
+        display: none;
+    }
+
+    #budaya .container-fluid .title-budaya .subtitle {
+        font-size: 14px;
+    }
+
+    #tentang-section .container .card-group .row .card-section .card {
+        margin: 0;
+        margin-top: 80px !important;
+    }
+
+    #slider-images .container-fluid .slider-group .shape-bawah {
+        margin-top: -70px !important;
+    }
+
+    #event-section .container .card .card-body .text {
+        width: 100% !important;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    #tentang-section {
+        height: max-content;
+        padding: 100px 0;
+    }
+
+    #hero-section .container .title {
+        font-size: 80px !important;
+    }
+
+    #hero-section .container .subtitle {
+        font-size: 24px !important;
+    }
+
+    #hero-section .container img {
+        width: 70px;
+    }
+
+    #tentang-section .container .card-group .row .card-section:nth-child(2) .card-tentang::before {
+        display: none;
+    }
+
+    #tentang-section .container .card-group .row .col-3 .card .card-body .deskripsi .card-title {
+        font-size: 16px;
+    }
+
+    #tentang-section .container .card-group .row .col-3 .card .card-body .deskripsi .card-text {
+        font-size: 14px;
+    }
+
+    #budaya .container-fluid .title-budaya .title {
+        font-size: 24px !important;
+    }
+
+    #budaya .container-fluid .title-budaya .title span img {
+        width: 30px;
+    }
+
+    #budaya .container-fluid .card-group .card-items:nth-child(1) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+    
+    #budaya .container-fluid .card-group .card-items:nth-child(2) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+    
+    #budaya .container-fluid .card-group .card-items:nth-child(3) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+
+    #tentang-section .container .card-group .row .card-section .card-tentang::before {
+        display: none;
+    }
+
+    #budaya .container-fluid .title-budaya .subtitle {
+        font-size: 12px;
+    }
+
+    #tentang-section .container .card-group .row .card-section .card {
+        margin: 0;
+        margin-top: 80px !important;
+    }
+
+    #messages .container .card .card-header p {
+        font-size: 18px;
+    }
+
+    #messages .container .card .card-body h1 {
+        font-size: 24px;
+    }
+
+    #messages .container .card .card-footer .text p {
+        font-size: 14px;
+    }
+
+    #slider-images .container-fluid .slider-group .shape-bawah {
+        margin-top: -164px !important;
+    }
+
+    .owl-carousel .owl-item img {
+        width: 80%;
+    }
+
+    #event-section {
+        padding-top: 0px !important;
+    }
+
+    #event-section .container .card .card-body .text {
+        width: 100% !important;
+    }
+
+    #event-section .container .card .card-body .text h1 {
+        font-size: 20px !important;
+    }
+
+    #event-section .container .card .card-body .text p {
+        font-size: 14px !important;
+    }
+
+    #event-section .container .card .text .btn-group button {
+        font-size: 12px;
+    }
+
+    .owl-nav {
+        opacity: 0 !important;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 575px) {
+
+    /* navbar */
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }    /* navbar */
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    #tentang-section {
+        height: max-content;
+        padding: 100px 0;
+    }
+
+    #hero-section .container .title {
+        font-size: 60px !important;
+    }
+
+    #hero-section .container .subtitle {
+        font-size: 20px !important;
+    }
+
+    #hero-section .container img {
+        width: 60px;
+    }
+
+    #tentang-section .container .card-group .row .card-section:nth-child(2) .card-tentang::before {
+        display: none;
+    }
+
+    #tentang-section .container .card-group .row .col-3 .card .card-body .deskripsi .card-title {
+        font-size: 16px;
+    }
+
+    #tentang-section .container .card-group .row .col-3 .card .card-body .deskripsi .card-text {
+        font-size: 14px;
+    }
+
+    #tentang-section .container .card-group .row .card-section {
+        margin: 0 auto;
+    }
+
+    #budaya .container-fluid .title-budaya  {
+        flex-direction: column;
+    }
+
+    #budaya .container-fluid .title-budaya .subtitle {
+        width: 100% !important;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    #budaya .container-fluid .title-budaya .title {
+        font-size: 24px !important;
+    }
+
+    #budaya .container-fluid .title-budaya .title span img {
+        width: 30px;
+    }
+
+    #budaya .container-fluid .card-group .card-items:nth-child(1) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+    
+    #budaya .container-fluid .card-group .card-items:nth-child(2) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+    
+    #budaya .container-fluid .card-group .card-items:nth-child(3) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+
+    #tentang-section .container .card-group .row .card-section .card-tentang::before {
+        display: none;
+    }
+
+    #budaya .container-fluid .title-budaya .subtitle {
+        font-size: 12px;
+    }
+
+    #tentang-section .container .card-group .row .card-section .card {
+        margin: 0;
+        margin-top: 80px !important;
+    }
+
+    #messages .container .card .card-header p {
+        font-size: 16px;
+    }
+
+    #messages .container .card .card-body h1 {
+        font-size: 22px;
+    }
+
+    #messages .container .card .card-footer .text p {
+        font-size: 12px;
+    }
+
+    #slider-images {
+        padding-bottom: 0;
+    }
+
+    #slider-images .container-fluid .slider-group .shape-bawah {
+        margin-top: -164px !important;
+    }
+
+    #slider-images .container-fluid .slider-group .owl-carousel .owl-images {
+        margin: 0 auto;
+    }
+
+    #slider-images .container-fluid .slider-group .owl-carousel .owl-images img{
+        margin: 0 auto;
+    }
+
+    .owl-carousel .owl-item img {
+        width: 90%;
+        height: 78%;
+    }
+
+    #event-section {
+        padding-top: 0px !important;
+    }
+
+    #event-section .container .card {
+        padding: 20px 20px;
+    }
+
+    #event-section .container .card .card-body .text {
+        width: 100% !important;
+    }
+
+    #event-section .container .card .card-body .text h1 {
+        font-size: 18px !important;
+    }
+
+    #event-section .container .card .card-body .text p {
+        font-size: 12px !important;
+    }
+
+    #event-section .container .card .text .btn-group button {
+        font-size: 10px;
+    }
+
+    .owl-nav {
+        opacity: 0 !important;
+    }
+
+    #budaya .container-fluid .card-group .card-items {
+        margin: 0 auto;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 399px) {
+    /* navbar */
+
+    header .navbar .container .collapse .navbar-nav:last-child {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .navbar .container .collapse .navbar-nav:last-child,
+    header .navbar .container .collapse .navbar-nav:last-child .nav-link .signup {
+        width: max-content
+    }
+
+    #tentang-section {
+        height: max-content;
+        padding: 40px 0;
+    }
+
+    #hero-section .container .title {
+        font-size: 40px !important;
+    }
+
+    #hero-section .container .subtitle {
+        font-size: 18px !important;
+    }
+
+    #hero-section .container img {
+        width: 50px;
+    }
+
+    #tentang-section .container .card-group .row .card-section {
+        width: 80% !important;
+    }
+
+    #tentang-section .container .card-group .row .card-section:nth-child(2) .card-tentang::before {
+        display: none;
+    }
+
+    #tentang-section .container .card-group .row .col-3 .card .card-body .deskripsi .card-title {
+        font-size: 16px;
+    }
+
+    #tentang-section .container .card-group .row .col-3 .card .card-body .deskripsi .card-text {
+        font-size: 14px;
+    }
+
+    #tentang-section .container .card-group .row .card-section {
+        margin: 0 auto;
+    }
+
+    #budaya .container-fluid .card-group .card-items {
+        width: 290px;
+    }
+
+    #budaya .container-fluid .card-group .card .card-body .images-style img {
+        margin-left: 76px;
+    }
+
+    #budaya .container-fluid .card-group {
+        margin: 0 Im !important;
+    }
+
+    #budaya .container-fluid .title-budaya  {
+        flex-direction: column;
+    }
+
+    #budaya .container-fluid .title-budaya .subtitle {
+        width: 100% !important;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    #budaya .container-fluid .title-budaya .title {
+        font-size: 24px !important;
+    }
+
+    #budaya .container-fluid .title-budaya .title span img {
+        width: 30px;
+    }
+
+    #budaya .container-fluid .card-group .card-items:nth-child(1) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+    
+    #budaya .container-fluid .card-group .card-items:nth-child(2) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+    
+    #budaya .container-fluid .card-group .card-items:nth-child(3) .card .card-body .images-style .tag .tag-budaya {
+        bottom: 160px;
+    }
+
+    #tentang-section .container .card-group .row .card-section .card-tentang::before {
+        display: none;
+    }
+
+    #budaya .container-fluid .title-budaya .subtitle {
+        font-size: 12px;
+    }
+
+    #tentang-section .container .card-group .row .card-section .card {
+        margin: 0;
+        margin-top: 80px !important;
+    }
+
+    #btn-selengkapnya .btn-primary {
+        font-size: 12px;
+    }
+
+    #messages .container .card .card-header p {
+        font-size: 14px;
+    }
+
+    #messages .container .card .card-body h1 {
+        font-size: 20px;
+    }
+
+    #messages .container .card .card-footer .text p {
+        font-size: 10px;
+    }
+
+    #slider-images {
+        padding-bottom: 0;
+    }
+
+    #slider-images .container-fluid .slider-group .shape-bawah {
+        margin-top: -164px !important;
+    }
+
+    #slider-images .container-fluid .slider-group .owl-carousel .owl-images {
+        margin: 0 auto;
+    }
+
+    #slider-images .container-fluid .slider-group .owl-carousel .owl-images img{
+        margin: 0 auto;
+    }
+
+    .owl-carousel .owl-item img {
+        width: 90%;
+        height: 78%;
+    }
+
+    #event-section {
+        padding-top: 0px !important;
+    }
+
+    #event-section .container .card {
+        padding: 20px 20px;
+    }
+
+    #event-section .container .card .card-body .text {
+        width: 100% !important;
+    }
+
+    #event-section .container .card .card-body .text h1 {
+        font-size: 16px !important;
+    }
+
+    #event-section .container .card .card-body .text p {
+        font-size: 10px !important;
+    }
+
+    #event-section .container .card .text .btn-group button {
+        font-size: 8px;
+    }
+
+    .owl-nav {
+        opacity: 0 !important;
+    }
+
+    #budaya .container-fluid .card-group .card-items {
+        margin: 0 auto;
+    }
+
+    footer .container .text-group .social-media .row .col-md-1 img {
+        width: 26px !important;
+    }
+
+    footer .container .text-group h5 {
+        font-size: 16px !important;
+    }
+
+    footer .container .text-group .link p,
+    footer .container .text-group p,
+    footer .container .copyright p
+    {
+        font-size: 14px !important;
+    }
+
 }

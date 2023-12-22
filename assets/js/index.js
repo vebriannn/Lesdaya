@@ -11,6 +11,28 @@ window.addEventListener('scroll', () => {
     }
 })
 
+if(window.innerWidth < 992) {
+    idHeader.classList.add("actived-mobile");
+}
+else {
+    idHeader.classList.remove("actived-mobile");
+}
+
+
+// navbar sticky
+window.addEventListener('scroll', () => {
+    
+
+    // navbar sticky
+    if(window.scrollY > 1) {
+        idHeader.classList.add("scrol-actived");
+    }
+    else {
+        idHeader.classList.remove("scrol-actived");
+    }
+
+})
+
 $(document).ready(function() {
     $('.owl-carousel').owlCarousel({
         loop:true,
@@ -19,14 +41,20 @@ $(document).ready(function() {
         responsive:{
             0:{
                 items:1,
+                margin:0,
                 nav:true
             },
-            600:{
+            576:{
+                items:3,
+                margin:200,
+                nav:true
+            },
+            768:{
                 items:3,
                 nav:false
             },
-            1000:{
-                items:5,
+            992:{
+                items:4,
                 nav:true,
             }
         }
