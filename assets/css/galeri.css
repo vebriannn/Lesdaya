@@ -889,9 +889,10 @@ footer .container .copyright p .link-underline {
         margin-left: -14px;
     }
 
-    footer 
-    
-
+    footer {
+        margin-top: 0px !important;
+    }
+	
     footer .container .text-group .social-media .row .col-md-1 img {
         width: 26px !important;
     }
@@ -1121,9 +1122,10 @@ footer .container .copyright p .link-underline {
 
     }
 
-    footer 
-    
-
+    footer {
+        margin-top: 0px !important;
+    }
+	
     footer .container .text-group .social-media .row .col-md-1 img {
         width: 26px !important;
     }
